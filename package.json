@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "sass": "^1.58.1",
     "vite": "^4.0.0"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
