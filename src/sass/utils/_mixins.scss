@@ -1,0 +1,35 @@
+/**
+  |============================
+  |  Mixins
+  |============================
+*/
+
+@mixin media-mobile-max($media: 320px) {
+  @media (max-width: $media) {
+    @content;
+  }
+}
+
+@mixin media-tablet-max($media: 768px) {
+  @media (max-width: $media) {
+    @content;
+  }
+}
+
+@mixin media-desktop-max($media: 1280px) {
+  @media (max-width: $media) {
+    @content;
+  }
+}
+
+/**
+  |============================
+  |  Example of use:
+  |============================
+*/
+
+// @include media-tablet-max(1200px) {
+//   .button {
+//   color: potato;
+//   }
+//   }
