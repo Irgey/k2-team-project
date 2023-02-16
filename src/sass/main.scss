@@ -6,24 +6,18 @@
 @import './base/section';
 
 // Components styles
-@import './components/slider';
-@import './components/nav';
 @import './components/logo';
 @import './components/hero';
 @import './components/header';
-@import './components/hamburger';
+@import './components/mobile-menu';
 @import './components/footer';
-@import './components/contacts';
 @import './components/btn';
-@import './components/anchor';
 
-@import './components/forms/contact-us/form';
-@import './components/forms/contact-us/modal';
-@import './components/forms/contact-us/icons-contact';
+// Forms styles
+@import './components/forms/contact-us/contact-us_thank-you-modal';
+@import './components/forms/contact-us/contact-us-modal-form';
 
 @import './components/forms/subscribe/form';
-@import './components/forms/subscribe/modal';
-@import './components/forms/subscribe/icons-subscribe';
 
 // Utils styles
 @import './utils/mixins';
