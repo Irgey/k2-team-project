@@ -193,7 +193,6 @@ summary {
   line-height: 1.2083333333;
   color: #000000;
   text-align: center;
-  margin-right: 14px;
 }
 @media screen and (min-width: 768px) {
   .title {
@@ -337,6 +336,57 @@ ol {
   |  Delivery styles
   |============================
 */
+.delivery__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-decoration: none;
+}
+
+.delivery__item {
+  display: flex;
+  align-items: center;
+}
+
+.delivery-item__text {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2142857143;
+}
+
+.delivery__img {
+  margin-top: 26px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 8px 14px;
+  border: 1px solid #000000;
+  margin-right: 8px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 6px;
+}
+
+.cirle:nth-child(1) {
+  padding: 8px 16px;
+}
+
+.digit {
+  display: block;
+  width: 12px;
+  height: 24px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000000;
+}
+
 /**
   |============================
   |  About styles
@@ -345,7 +395,8 @@ ol {
 @media (max-width: 767.98px) {
   .min-title {
     margin-bottom: 16px;
-    text-align: center;
+    text-align: inherit;
+    margin-top: 0px;
   }
 }
 .userpic {
@@ -357,6 +408,7 @@ ol {
     display: flex;
     align-items: center;
     gap: 14px;
+    margin-bottom: 32px;
   }
 }
 /**

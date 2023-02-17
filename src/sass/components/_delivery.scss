@@ -4,11 +4,58 @@
   |============================
 */
 
+.delivery__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-decoration: none;
+}
+
 .delivery__item {
+  display: flex;
+  align-items: center;
 }
 
 .delivery-item__text {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(17 / 14);
 }
 
-.delivery-item__digit {
+.delivery__img {
+  margin-top: 26px;
+}
+
+// .delivery-item__digit-edit {
+//   width: 40px;
+//   height: 40px;
+// }
+
+.circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 8px 14px;
+  border: 1px solid $main-black;
+  margin-right: 8px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 6px;
+}
+
+.cirle:nth-child(1) {
+  padding: 8px 16px;
+}
+
+.digit {
+  display: block;
+  width: 12px;
+  height: 24px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  color: $main-black;
 }
