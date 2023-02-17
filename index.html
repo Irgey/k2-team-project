@@ -5,36 +5,71 @@
     <link rel="icon" type="image/svg+xml" href="/k2-team-project/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ANEMONE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     
-    <link rel="stylesheet" href="/k2-team-project/assets/index-f48cce7a.css">
+    <link rel="stylesheet" href="/k2-team-project/assets/index-136f399d.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
     
     
-    <!--
-  |============================
-  | Contact us thnk you modal window
-  |============================
--->
-<!--
-        |============================
-        | Modal window
-        |============================
-      -->
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button class="modal-btn-close" aria-label="закрити вікно" data-modal-close>
-      <svg class="modal-icons" width="18" height="18">
+    
+    
+    
+    
+    
+    
+
+    <div class="backdrop is-hidden" data-modal>
+  <div class="modal-thank-you">
+    <button class="modal-btn-close" aria-label="Close window" data-modal-close>
+      <svg class="modal__icon-close" width="18" height="18">
         <use href="../images/sprite.svg#icon-close-menu"></use>
       </svg>
     </button>
-    <svg class="" width="188" height="142">
-      <use href="../images/sprite.svg#thank-you-plants"></use>
-    </svg>
-    <strong class="modal-title">Thank you!</strong>
-    <p>We have received your contact details and will reach you soon.</p>
-    <button class="button-continue">Continue</button>
+    <picture>
+      <!-- Tablet/desktop screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../images/contact-us/plants-tab.png    1x,
+          ../images/contact-us/plants-tab@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Mobile screen -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ../images/contact-us/plants.png    1x,
+          ../images/contact-us/plants@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class="modal-thank-you__image"
+        src="../images/contact-us/plants.png"
+        alt="Plants"
+        loading="lazy"
+      />
+    </picture>
+
+    <strong class="modal-thank-you__title">Thank you!</strong>
+    <p class="modal-thank-you__text">
+      We have received your contact details and will reach you soon.
+    </p>
+    <button
+      class="button-continue"
+      aria-label="continue and close window"
+      data-modal-close
+    >
+      Continue
+    </button>
   </div>
 </div>
 
