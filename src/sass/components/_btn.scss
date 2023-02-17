@@ -24,6 +24,13 @@
   line-height: calc(17 / 14);
   text-align: center;
   background: $button-default-color;
+  border-color: transparent;
   border-radius: 8px;
   color: $main-white;
+  &:hover {
+    background-color: $button-hovered-color;
+  }
+  &:focus {
+    background-color: $button-focused-color;
+  }
 }
