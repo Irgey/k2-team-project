@@ -1,6 +1,11 @@
 /**
   |============================
-  |  Animations
+  |  Mixins
+  |============================
+*/
+/**
+  |============================
+  |  Example of use:
   |============================
 */
 /**
@@ -151,6 +156,30 @@ summary {
 
 /**
   |============================
+  |  Hide me
+  |============================
+*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/**
+  |============================
+  |  Animations
+  |============================
+*/
+/**
+  |============================
   |  Common 
   |============================
 */
@@ -159,7 +188,6 @@ summary {
   line-height: 1.2083333333;
   color: #000000;
   text-align: center;
-  margin-right: 14px;
 }
 @media screen and (min-width: 768px) {
   .title {
@@ -167,6 +195,12 @@ summary {
     line-height: 1.2272727273;
     margin-right: 16px;
   }
+}
+.title:after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  border: 1px solid #000000;
 }
 
 .min-title {
@@ -225,6 +259,24 @@ body {
   |  Reset
   |============================
 */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
 /**
   |============================
   |  Section settings
@@ -251,7 +303,17 @@ body {
 */
 /**
   |============================
-  |  Hamburger menu settings
+  |  Header section
+  |============================
+*/
+.nav__link {
+  text-decoration: none;
+  color: rgb(255, 99, 71);
+}
+
+/**
+  |============================
+  |  Mobile menu settings
   |============================
 */
 /**
@@ -279,7 +341,9 @@ body {
 }
 
 .button-continue {
+  display: block;
   padding: 10px 86px;
+  margin: 0 auto;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2142857143;
@@ -298,17 +362,179 @@ body {
 
 /**
   |============================
-  |  Modal Contact Us settings
+  |  Delivery styles
+  |============================
+*/
+.delivery__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-decoration: none;
+}
+
+.delivery__item {
+  display: flex;
+  align-items: center;
+}
+
+.delivery-item__text {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2142857143;
+}
+
+.delivery__img {
+  margin-top: 26px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 8px 14px;
+  border: 1px solid #000000;
+  margin-right: 8px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 6px;
+}
+
+.cirle:nth-child(1) {
+  padding: 8px 16px;
+}
+
+.digit {
+  display: block;
+  width: 12px;
+  height: 24px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #000000;
+}
+
+/**
+  |============================
+  |  About styles
+  |============================
+*/
+@media (max-width: 767.98px) {
+  .min-title {
+    margin-bottom: 16px;
+    text-align: inherit;
+    margin-top: 0px;
+  }
+}
+.userpic {
+  border-radius: 0px 639.5px 639.5px 0px;
+}
+
+@media (max-width: 100000px) {
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+}
+/**
+  |============================
+  |  Modal Contact Us Thank you settings
   |============================
 */
 .modal-thank-you {
-  padding: 44px 16px 32px 16px;
+  position: relative;
+  width: 272px;
   margin: 0 auto;
+  padding: 44px 16px 32px 16px;
+}
+@media screen and (min-width: 768px) {
+  .modal-thank-you {
+    width: 480px;
+    padding: 54px 32px 54px 32px;
+  }
 }
 
-.modal__vector-image {
+.modal-thank-you__image {
   display: block;
   margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.modal-thank-you__title {
+  display: block;
+  text-align: center;
+  margin-bottom: 14px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+@media screen and (min-width: 768px) {
+  .modal-thank-you__title {
+    font-size: 32px;
+    line-height: 1.21875;
+    margin-bottom: 16px;
+  }
+}
+
+.modal-thank-you__text {
+  margin-bottom: 18px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  color: #5c5c5c;
+}
+@media screen and (min-width: 768px) {
+  .modal-thank-you__text {
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 34px;
+  }
+}
+
+.modal-btn-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+.button-continue {
+  display: block;
+  padding: 10px 86px;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2142857143;
+  text-align: center;
+  background: #e86f54;
+  border-color: transparent;
+  border-radius: 8px;
+  color: #ffffff;
+}
+.button-continue:hover {
+  background-color: #e25b41;
+}
+.button-continue:focus {
+  background-color: #fa6f54;
+}
+@media screen and (min-width: 768px) {
+  .button-continue {
+    font-size: 18px;
+    line-height: 1.2222222222;
+    padding: 14px 165px;
+  }
 }
 
 /**
@@ -321,35 +547,6 @@ body {
   |  Subscribe modal form settings
   |============================
 */
-/**
-  |============================
-  |  Mixins
-  |============================
-*/
-/**
-  |============================
-  |  Example of use:
-  |============================
-*/
-/**
-  |============================
-  |  Hide me
-  |============================
-*/
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 /**
   |============================
   |  Connections 

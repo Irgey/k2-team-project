@@ -8,11 +8,17 @@
   line-height: calc(29px / 24px);
   color: #000000;
   text-align: center;
-  margin-right: 14px;
   @media screen and (min-width: 768px) {
     font-size: 44px;
     line-height: calc(54px / 44px);
     margin-right: 16px;
+  }
+
+  &:after {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    border: 1px solid $main-black;
   }
 }
 .min-title {
