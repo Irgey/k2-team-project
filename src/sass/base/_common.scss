@@ -3,3 +3,38 @@
   |  Common 
   |============================
 */
+.title {
+  font-size: 24px;
+  line-height: 1.2;
+  color: #000000;
+  text-align: center;
+  margin-right: 14px;
+  @media screen and (min-width: $desctop) {
+    font-size: 44px;
+    line-height: 1.22;
+    margin-right: 16px;
+  }
+}
+.section {
+  padding: 0;
+}
+
+.body {
+  font-family: Montserrat, sans-serif;
+  color: #000000;
+}
+.container {
+  max-width: 320px;
+  margin: 0, 0, 60px, 0;
+  padding: 0, 16px;
+  @media screen and (min-width: $tablet) {
+    max-width: 762px;
+    margin: 0, 0, 100px, 0;
+    padding: 0, 24px;
+  }
+  @media screen and(min-width:$desctop) {
+    max-width: 1280px;
+  }
+}
+  
+
