@@ -4,19 +4,13 @@
   |============================
 */
 
-@mixin media-mobile-max($media: 320px) {
+@mixin media-mobile-max($media: 767.98px) {
   @media (max-width: $media) {
     @content;
   }
 }
 
-@mixin media-tablet-max($media: 768px) {
-  @media (max-width: $media) {
-    @content;
-  }
-}
-
-@mixin media-desktop-max($media: 1280px) {
+@mixin media-tablet-max($media: 1279.98px) {
   @media (max-width: $media) {
     @content;
   }

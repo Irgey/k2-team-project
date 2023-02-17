@@ -3,12 +3,11 @@
   |  Container settings
   |============================
 */
+
 .container {
   max-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
-
-
 
   @media (min-width: 768px) {
     max-width: 768px;
