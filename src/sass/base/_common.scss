@@ -5,36 +5,42 @@
 */
 .title {
   font-size: 24px;
-  line-height: 1.2;
+  line-height: calc(29px/24px);
   color: #000000;
   text-align: center;
   margin-right: 14px;
-  @media screen and (min-width: $desctop) {
+  @media screen and (min-width: $tablet) {
     font-size: 44px;
-    line-height: 1.22;
+    line-height: calc(54px/44px);
     margin-right: 16px;
   }
 }
-.section {
-  padding: 0;
+.min-title{
+  font-size: 16px;
+  line-height:calc(20px/16px);
+  color: #000000;
+  text-align: center;
+  margin-bottom: 6px;
+  @media screen and (min-width: $tablet) {
+    font-size: 32px;
+    line-height: calc(39px/32px);
+    margin-right: 8;
+    margin-bottom: 8;
+  }
+    @media screen and (min-width: $desktop){
+      font-size: 36px;
+      line-height: calc(44px/36px);
+      margin-right: 16px;
+      margin-bottom: 4px;
+    }
+  
 }
+
 
 .body {
   font-family: Montserrat, sans-serif;
   color: #000000;
 }
-.container {
-  max-width: 320px;
-  margin: 0, 0, 60px, 0;
-  padding: 0, 16px;
-  @media screen and (min-width: $tablet) {
-    max-width: 762px;
-    margin: 0, 0, 100px, 0;
-    padding: 0, 24px;
-  }
-  @media screen and(min-width:$desctop) {
-    max-width: 1280px;
-  }
-}
+
   
 
