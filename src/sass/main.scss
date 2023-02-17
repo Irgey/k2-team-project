@@ -1,4 +1,5 @@
 //  Base styles
+@import './utils/variables';
 @import './base/animations';
 @import './base/common';
 @import './base/container';
@@ -21,7 +22,7 @@
 // Utils styles
 @import './utils/mixins';
 @import './utils/normalize';
-@import './utils/variables';
+
 @import './utils/visually-hidden';
 
 /**
