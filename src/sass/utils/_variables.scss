@@ -3,12 +3,38 @@
   |  BG colors + Colors
   |============================
 */
-$main-theme-color: #E86F54;
-$main-theme-color-unfocused: rgba(232, 111, 84, 0.4);
-$icon-black: #0E0E0E;
-$main-font-color: #000000;
+
+// Background-colors
+
 $main-white: #FFFFFF;
-$modal-backgroud: rgba(0, 0, 0, 0.3);
-$modal-color: rgba(255, 255, 255, 1);
-$grey-scale: rgba(215, 215, 215, 1);
-$font-sub-color: #5C5C5C;
+$main-black: #000000;
+
+$mobile-bg-color: #E86F54;
+$modal-backdrop: rgba(0, 0, 0, 0.3);
+
+// ???
+$pop-up-thanks: #666464;
+
+// Font colors
+
+$main-white: #FFFFFF;
+
+$main-font-color: #000000;
+$second-font-color: #5C5C5C;
+
+// Button colors
+
+$main-white: #FFFFFF;
+
+$button-default-color: #E86F54;
+$button-unactive-color: rgba(232, 111, 84, 0.4);
+$button-hovered-color: #E25B41;
+$button-focused-color:#FA6F54;
+
+// Icon colors
+
+$main-white: #FFFFFF;
+
+$icon-black: #0E0E0E;
+
+
