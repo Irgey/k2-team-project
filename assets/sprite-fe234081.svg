@@ -30,6 +30,11 @@
 <symbol id="icon-close-menu" viewBox="0 0 32 32">
 <path d="M23.733 10.304l-1.504-1.504-5.963 5.963-5.963-5.963-1.504 1.504 5.963 5.963-5.963 5.963 1.504 1.504 5.963-5.963 5.963 5.963 1.504-1.504-5.963-5.963 5.963-5.963z"></path>
 </symbol>
+<!-- MODAL CLOSE ICON -->
+<symbol id="close" viewBox="0 0 24 24" fill="none" >
+<path d="M20 4L4 20M20 20L4 4L20 20Z" stroke="black" stroke-width="2" stroke-linecap="round"/>
+</svg>
+
 <symbol id="icon-Burger" viewBox="0 0 32 32">
 <path d="M4 5.333h24v2.667h-24v-2.667zM12 14.667h16v2.667h-16v-2.667zM4 24h24v2.667h-24v-2.667z"></path>
 </symbol>
