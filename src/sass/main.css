@@ -312,9 +312,14 @@ ol {
   |  Header section
   |============================
 */
+.nav__link {
+  text-decoration: none;
+  color: rgb(255, 99, 71);
+}
+
 /**
   |============================
-  |  Hamburger menu settings
+  |  Mobile menu settings
   |============================
 */
 /**
