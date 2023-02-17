@@ -1,13 +1,3 @@
-<!--
-  |============================
-  | Contact us thnk you modal window
-  |============================
--->
-<!--
-        |============================
-        | Modal window
-        |============================
-      -->
 <div class="backdrop is-hidden" data-modal>
   <div class="modal-thank-you">
     <button class="modal-btn-close" aria-label="Close window" data-modal-close>
@@ -15,11 +5,37 @@
         <use href="../images/sprite.svg#icon-close-menu"></use>
       </svg>
     </button>
-    <svg class="modal-thank-you__vector-image" width="188" height="142">
-      <use href="../images/sprite.svg#thank-you-plants"></use>
-    </svg>
+    <picture>
+      <!-- Tablet/desktop screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../images/contact-us/plants-tab.png    1x,
+          ../images/contact-us/plants-tab@2x.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Mobile screen -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ../images/contact-us/plants.png    1x,
+          ../images/contact-us/plants@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class="modal-thank-you__image"
+        src="../images/contact-us/plants.png"
+        alt="Plants"
+        loading="lazy"
+      />
+    </picture>
+
     <strong class="modal-thank-you__title">Thank you!</strong>
-    <p>We have received your contact details and will reach you soon.</p>
+    <p class="modal-thank-you__text">
+      We have received your contact details and will reach you soon.
+    </p>
     <button
       class="button-continue"
       aria-label="continue and close window"
