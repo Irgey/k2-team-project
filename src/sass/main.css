@@ -156,11 +156,6 @@ summary {
 
 /**
   |============================
-  |  BG colors + Colors
-  |============================
-*/
-/**
-  |============================
   |  Hide me
   |============================
 */
@@ -183,6 +178,152 @@ summary {
   |  Animations
   |============================
 */
+/**
+  |============================
+  |  Normalize min
+  |============================
+*/
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+hr {
+  height: 0;
+  color: inherit;
+}
+
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+table {
+  text-indent: 0;
+  border-color: inherit;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+  -webkit-appearance: button;
+}
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+legend {
+  padding: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+summary {
+  display: list-item;
+}
+
 /**
   |============================
   |  Common 
@@ -232,7 +373,7 @@ summary {
   }
 }
 
-.body {
+body {
   font-family: Montserrat, sans-serif;
   color: #000000;
 }
@@ -331,6 +472,38 @@ ol {
   |  Buttons 
   |============================
 */
+.modal-btn-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+.button-continue {
+  padding: 10px 86px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2142857143;
+  text-align: center;
+  background: #e86f54;
+  border-color: transparent;
+  border-radius: 8px;
+  color: #ffffff;
+}
+.button-continue:hover {
+  background-color: #e25b41;
+}
+.button-continue:focus {
+  background-color: #fa6f54;
+}
+
 /**
   |============================
   |  Delivery styles
@@ -416,6 +589,16 @@ ol {
   |  Modal Contact Us settings
   |============================
 */
+.modal-thank-you {
+  padding: 44px 16px 32px 16px;
+  margin: 0 auto;
+}
+
+.modal__vector-image {
+  display: block;
+  margin: 0 auto;
+}
+
 /**
   |============================
   |  Contact us modal
