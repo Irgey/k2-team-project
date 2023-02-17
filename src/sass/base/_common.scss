@@ -9,7 +9,7 @@
   color: #000000;
   text-align: center;
   margin-right: 14px;
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 768px) {
     font-size: 44px;
     line-height: calc(54px / 44px);
     margin-right: 16px;
