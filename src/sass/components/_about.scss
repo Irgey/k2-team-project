@@ -3,3 +3,26 @@
   |  About styles
   |============================
 */
+
+@include media-mobile-max(767.98px) {
+  .min-title {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+}
+
+// .subtitle {
+//   margin-bottom: 16px;
+// }
+
+.userpic {
+  border-radius: 0px 639.5px 639.5px 0px;
+}
+
+@include media-mobile-max(100000px) {
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+}

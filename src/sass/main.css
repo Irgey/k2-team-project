@@ -1,119 +1,5 @@
 /**
   |============================
-  |  Animations
-  |============================
-*/
-/**
-  |============================
-  |  Common 
-  |============================
-*/
-/**
-  |============================
-  |  Container settings
-  |============================
-*/
-.container {
-  max-width: 320px;
-  padding: 0 16px;
-  margin: 0 auto;
-}
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 24px;
-  }
-}
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-/**
-  |============================
-  |  Reset
-  |============================
-*/
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol {
-  padding: 0;
-  margin: 0;
-}
-
-/**
-  |============================
-  |  Section settings
-  |============================
-*/
-.section {
-  padding-bottom: 60px;
-}
-@media (min-width: 768px) {
-  .section {
-    padding-bottom: 100px;
-  }
-}
-
-/**
-  |============================
-  |  Logo settings
-  |============================
-*/
-/**
-  |============================
-  |  Hero section
-  |============================
-*/
-.nav__link {
-  text-decoration: none;
-  color: rgb(255, 99, 71);
-}
-
-/**
-  |============================
-  |  Hamburger menu settings
-  |============================
-*/
-/**
-  |============================
-  |  Footer section
-  |============================
-*/
-/**
-  |============================
-  |  Buttons 
-  |============================
-*/
-/**
-  |============================
-  |  Modal Contact Us settings
-  |============================
-*/
-/**
-  |============================
-  |  Contact us modal
-  |============================
-*/
-/**
-  |============================
-  |  Subscribe modal form settings
-  |============================
-*/
-/**
-  |============================
   |  Mixins
   |============================
 */
@@ -292,6 +178,197 @@ summary {
   overflow: hidden;
 }
 
+/**
+  |============================
+  |  Animations
+  |============================
+*/
+/**
+  |============================
+  |  Common 
+  |============================
+*/
+.title {
+  font-size: 24px;
+  line-height: 1.2083333333;
+  color: #000000;
+  text-align: center;
+  margin-right: 14px;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 44px;
+    line-height: 1.2272727273;
+    margin-right: 16px;
+  }
+}
+.title:after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  border: 1px solid #000000;
+}
+
+.min-title {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 6px;
+}
+@media screen and (min-width: 768px) {
+  .min-title {
+    font-size: 32px;
+    line-height: 1.21875;
+    margin-right: 8;
+    margin-bottom: 8;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .min-title {
+    font-size: 36px;
+    line-height: 1.2222222222;
+    margin-right: 16px;
+    margin-bottom: 4px;
+  }
+}
+
+.body {
+  font-family: Montserrat, sans-serif;
+  color: #000000;
+}
+
+/**
+  |============================
+  |  Container settings
+  |============================
+*/
+.container {
+  max-width: 320px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 24px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/**
+  |============================
+  |  Reset
+  |============================
+*/
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+/**
+  |============================
+  |  Section settings
+  |============================
+*/
+.section {
+  padding-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .section {
+    padding-bottom: 100px;
+  }
+}
+
+/**
+  |============================
+  |  Logo settings
+  |============================
+*/
+/**
+  |============================
+  |  Hero section
+  |============================
+*/
+/**
+  |============================
+  |  Header section
+  |============================
+*/
+/**
+  |============================
+  |  Hamburger menu settings
+  |============================
+*/
+/**
+  |============================
+  |  Footer section
+  |============================
+*/
+/**
+  |============================
+  |  Buttons 
+  |============================
+*/
+/**
+  |============================
+  |  Delivery styles
+  |============================
+*/
+/**
+  |============================
+  |  About styles
+  |============================
+*/
+@media (max-width: 767.98px) {
+  .min-title {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+}
+.userpic {
+  border-radius: 0px 639.5px 639.5px 0px;
+}
+
+@media (max-width: 100000px) {
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+}
+/**
+  |============================
+  |  Modal Contact Us settings
+  |============================
+*/
+/**
+  |============================
+  |  Contact us modal
+  |============================
+*/
+/**
+  |============================
+  |  Subscribe modal form settings
+  |============================
+*/
 /**
   |============================
   |  Connections 

@@ -1,3 +1,9 @@
+// Utils styles
+@import './utils/mixins';
+@import './utils/normalize';
+@import './utils/variables';
+@import './utils/visually-hidden';
+
 //  Base styles
 @import './base/animations';
 @import './base/common';
@@ -12,17 +18,13 @@
 @import './components/mobile-menu';
 @import './components/footer';
 @import './components/btn';
+@import './components/delivery';
+@import './components/about';
 
 // Forms styles
 @import './components/forms/contact-us/contact-us-thank-you-modal';
 @import './components/forms/contact-us/contact-us-modal-form';
 @import './components/forms/subscribe/_subscribe-modal-form';
-
-// Utils styles
-@import './utils/mixins';
-@import './utils/normalize';
-@import './utils/variables';
-@import './utils/visually-hidden';
 
 /**
   |============================
