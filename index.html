@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     
-    <link rel="stylesheet" href="/k2-team-project/assets/index-07de2178.css">
+    <link rel="stylesheet" href="/k2-team-project/assets/index-098be89c.css">
   </head>
   <body>
     <!-- <ul class="nav__list">
@@ -113,6 +113,47 @@
     <!--  Blog section  -->
 
     <!--  Footer section  -->
+
+    <!-- <button type="button" data-modal-open>Now shop</button> -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal-contact-us">
+    <button class="modal-btn-close" type="button" data-modal-close>
+      <svg class="modal__icon-close" width="18" height="18">
+        <use href="/k2-team-project/assets/sprite-2a663b34.svg#icon-close-menu"></use>
+      </svg>
+    </button>
+    <strong class="modal-contact-us__title-">Contact us</strong>
+    <p class="modal-contact-us__text">
+      If you have any additional questions or you want to clarify something
+      before you make an order please fill in your contact details. We will call
+      you back.
+    </p>
+    <form name="modal-form" class="modal-contact-us__form">
+      <label class="modal-contact-us__form-lable" for="user_name">Name</label>
+      <div class="modal-contact-us__form-wrapper first">
+        <input
+          class="modal-contact-us__form-input"
+          type="text"
+          name="user_name"
+          placeholder="Your name"
+          id="user_name"
+        />
+      </div>
+      <label class="modal-contact-us__form-lable" for="user_mail">Email</label>
+      <div class="modal-contact-us__form-wrapper">
+        <input
+          class="modal-contact-us__form-input"
+          type="email"
+          name="user_mail"
+          placeholder="Your email"
+          id="user_mail"
+        />
+      </div>
+      <button class="button-submit" type="submit">Send</button>
+    </form>
+  </div>
+</div>
+<script src="../../js/modal.js"></script>
 
     <div class="backdrop is-hidden" data-modal>
   <div class="modal-thank-you">
