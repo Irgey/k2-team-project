@@ -3,3 +3,16 @@
   |  Section settings
   |============================
 */
+.section {
+  padding-bottom: 60px;
+
+ 
+
+  @media (min-width: 768px) {
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: 1280px) {
+    
+  }
+}
