@@ -6,12 +6,16 @@
 .title {
   font-size: 24px;
   line-height: calc(29px / 24px);
-  color: #000000;
+  color: $main-black;
   text-align: center;
-  @media screen and (min-width: 768px) {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 32px;
+  @include media-tablet-min(767.98px) {
     font-size: 44px;
     line-height: calc(54px / 44px);
-    margin-right: 16px;
+    // margin-right: 16px;
   }
 
   &:after {
@@ -20,20 +24,24 @@
     height: 1px;
     border: 1px solid $main-black;
   }
+
+  @include media-tablet-min(1279.98px) {
+    margin-bottom: 80px;
+  }
 }
 .min-title {
   font-size: 16px;
   line-height: calc(20px / 16px);
-  color: #000000;
+  color: $main-black;
   text-align: center;
   margin-bottom: 6px;
-  @media screen and (min-width: 768px) {
+  @include media-tablet-min(767.98px) {
     font-size: 32px;
     line-height: calc(39px / 32px);
-    margin-right: 8;
-    margin-bottom: 8;
+    margin-right: 8px;
+    margin-bottom: 8px;
   }
-  @media screen and (min-width: 1280px) {
+  @include media-desktop-min(1279.98px) {
     font-size: 36px;
     line-height: calc(44px / 36px);
     margin-right: 16px;
@@ -43,5 +51,5 @@
 
 body {
   font-family: Montserrat, sans-serif;
-  color: #000000;
+  color: $main-black;
 }

@@ -8,6 +8,10 @@
   width: 272px;
   margin: 0 auto;
   padding: 44px 16px 32px 16px;
+  background-color: $main-white;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
   @media screen and (min-width: 768px) {
     width: 480px;
     padding: 54px 32px 54px 32px;

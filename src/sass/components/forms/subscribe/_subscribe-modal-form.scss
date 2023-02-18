@@ -1,5 +1,175 @@
 /**
   |============================
-  |  Subscribe modal form settings
+  |  Modal Contact Us Thank you settings
   |============================
 */
+.modal-subscribe {
+  position: relative;
+  width: 272px;
+  margin: 0 auto;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+
+  background-color: $main-white;
+  @media screen and (min-width: 768px) {
+    width: 588px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 860px;
+    display: flex;
+  }
+}
+.modal-subscribe__wrapper {
+  margin: 0 auto;
+  padding-top: 18px;
+  padding-bottom: 28px;
+  width: 236px;
+  @media screen and (min-width: 768px) {
+    width: 352px;
+    padding-top: 28px;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 0;
+    padding-top: 111px;
+    padding-bottom: 112px;
+  }
+}
+
+.modal-subscribe__image {
+  display: block;
+}
+.modal-subscribe__title {
+  display: block;
+  text-align: center;
+  margin-bottom: 14px;
+
+  font-weight: 600;
+  font-size: 19px;
+  line-height: calc(23 / 19);
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    line-height: calc(34 / 28);
+    margin-bottom: 24px;
+  }
+}
+.modal-subscribe__text {
+  margin-bottom: 18px;
+
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  text-align: center;
+
+  color: $second-font-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+}
+// Form
+.modal-subscribe__form {
+  margin: 0 auto;
+}
+.modal-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.modal-subscribe__comment {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: calc(12 / 10);
+  color: $second-font-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+}
+.input-field {
+  width: 236px;
+  height: 35px;
+  padding-left: 12px;
+
+  outline: transparent;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  color: rgba(0, 0, 0, 0.3);
+
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    height: 49px;
+
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+
+  &::placeholder {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    color: rgba(0, 0, 0, 0.3);
+
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: calc(17 / 14);
+    }
+  }
+}
+// Buttons
+.modal-btn-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  @media screen and (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+    .modal__icon-close {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+.button-subscribe {
+  display: block;
+  padding: 10px 82px;
+  margin-top: 18px;
+  border: none;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  text-align: center;
+  background: $button-default-color;
+  border-color: transparent;
+  border-radius: 8px;
+  color: $main-white;
+  &:hover {
+    background-color: $button-hovered-color;
+  }
+  &:focus {
+    background-color: $button-focused-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 28px;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    padding: 14px 122px;
+  }
+}
