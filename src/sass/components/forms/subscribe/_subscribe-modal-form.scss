@@ -136,6 +136,14 @@
   background-color: transparent;
   border: none;
   border-radius: 50%;
+  @media screen and (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+    .modal__icon-close {
+      width: 25px;
+      height: 25px;
+    }
+  }
 }
 .button-subscribe {
   display: block;
