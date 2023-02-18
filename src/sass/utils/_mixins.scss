@@ -16,6 +16,15 @@
   }
 }
 
+ // ronald mixin
+
+
+ @mixin media-desktop-min($media: 1280px) {
+  @media (min-width: $media) {
+    @content;
+  }
+}
+
 /**
   |============================
   |  Example of use:
