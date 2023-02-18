@@ -304,6 +304,12 @@ ol {
   |  Logo settings
   |============================
 */
+.logo {
+  width: 45px;
+  height: 35px;
+  text-decoration: none;
+}
+
 /**
   |============================
   |  Hero section
@@ -333,6 +339,26 @@ ol {
   |  Header section
   |============================
 */
+.headwrapper {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.burger__menu {
+  border: none;
+  background: transparent;
+  border: transparent;
+}
+
+.header-nav__link {
+  margin-right: 14px;
+}
+
 .nav__link {
   text-decoration: none;
   color: rgb(255, 99, 71);
