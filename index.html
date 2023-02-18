@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     
-    <link rel="stylesheet" href="/k2-team-project/assets/index-dfdbfa75.css">
+    <link rel="stylesheet" href="/k2-team-project/assets/index-4d7367d5.css">
   </head>
   <body>
     <header class="header">
@@ -41,7 +41,7 @@
         <li class="nav__item"><a class="nav__link" href="#blog">Blog</a></li>
       </ul>
     </nav>
-    <button class="contact-button" type="button">
+    <button class="contact-button" data-modal-open type="button">
       <svg class="contact-button__icon" width="20" height="20">
         <use href="/k2-team-project/assets/sprite-d3ee900b.svg#icon-header-tel"></use>
       </svg>
@@ -54,51 +54,82 @@
   </div>
 </header>
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+  <button class="menu-toggle js-close-menu" type="button">
+    <svg width="24" height="24">
+      <use class="icon-cross" href="/k2-team-project/assets/sprite-d3ee900b.svg#icon-close-menu"></use>
+    </svg>
+  </button>
+  <div class="mob-menu-wrapper">
+    <ul class="nav-mob__list">
+      <li class="nav-mob__item">
+        <a class="nav-mob__link current" href="#">Anemone</a>
+      </li>
+      <li class="nav-mob__item">
+        <a class="nav-mob__link" href="#">About us</a>
+      </li>
+      <li class="nav-mob__item">
+        <a class="nav-mob__link" href="#">Store</a>
+      </li>
+      <li class="nav-mob__item">
+        <a class="nav-mob__link" href="#">Delivery</a>
+      </li>
+      <li class="nav-mob__item">
+        <a class="nav-mob__link" href="#">Blog</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
     <!--  Hero section  -->
 <section class="hero" id="hero">
   <div class="container hero__box">
-    <h1 class="hero__title">ANEMON<span class="hero__title-element">E</span></h1>
+    <h1 class="hero__title">
+      ANEMON<span class="hero__title-element">E</span>
+    </h1>
 
-      <p class="hero__text">
-        flower <br />
-        studio
-      </p>
-      <div class="hero__wrapper">
-        <picture>
-          <source
-            media="(min-width: 1200px)"
-            srcset="/k2-team-project/assets/hero_desk@1x-4c9e38a3.jpg 1x, /k2-team-project/assets/hero_desk@2x-b1f84fe3.jpg 2x"
-            type="image/jpg"
-          />
+    <p class="hero__text">
+      flower <br />
+      studio
+    </p>
+    <div class="hero__wrapper">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="/k2-team-project/assets/hero_desk@1x-4c9e38a3.jpg 1x, /k2-team-project/assets/hero_desk@2x-b1f84fe3.jpg 2x"
+          type="image/jpg"
+        />
 
-          <source
-            media="(min-width: 768px)"
-            srcset="/k2-team-project/assets/hero_desk@1x-4c9e38a3.jpg 1x, /k2-team-project/assets/hero_desk@2x-b1f84fe3.jpg 2x"
-            type="image/jpg"
-          />
+        <source
+          media="(min-width: 768px)"
+          srcset="/k2-team-project/assets/hero_desk@1x-4c9e38a3.jpg 1x, /k2-team-project/assets/hero_desk@2x-b1f84fe3.jpg 2x"
+          type="image/jpg"
+        />
 
-          <source
-            media="(max-width: 767px)"
-            srcset="/k2-team-project/assets/hero_mob@1x-d553b509.jpg 1x, /k2-team-project/assets/hero_mob@2x-e1152d52.jpg 2x"
-            type="image/jpg"
-          />
-          <img
-            class="hero_image"
-            src="/k2-team-project/assets/hero_desk@1x-4c9e38a3.jpg"
-            alt="flover"
-            width="390"
-            height="636"
-          />
-        </picture>
-      </div>
+        <source
+          media="(max-width: 767px)"
+          srcset="/k2-team-project/assets/hero_mob@1x-d553b509.jpg 1x, /k2-team-project/assets/hero_mob@2x-e1152d52.jpg 2x"
+          type="image/jpg"
+        />
+        <img
+          class="hero_image"
+          src="/k2-team-project/assets/hero_desk@1x-4c9e38a3.jpg"
+          alt="flover"
+          width="390"
+          height="636"
+        />
+      </picture>
+    </div>
 
-      <button class="hero__button" data-modal-open type="button">
-        <svg class="hero__icon" width="64" height="76">
-          <use class="hero__icon-text" href="/k2-team-project/assets/sprite-d3ee900b.svg#icon-text"></use>
-          <use class="hero__icon-arrow" href="/k2-team-project/assets/sprite-d3ee900b.svg#icon-arrow"></use>
-        </svg>
-      </button>
-
+    <button class="hero__button" type="button">
+      <svg class="hero__icon" width="64" height="76">
+        <use class="hero__icon-text" href="/k2-team-project/assets/sprite-d3ee900b.svg#icon-text"></use>
+        <use
+          class="hero__icon-arrow"
+          href="/k2-team-project/assets/sprite-d3ee900b.svg#icon-arrow"
+        ></use>
+      </svg>
+    </button>
   </div>
 </section>
 
