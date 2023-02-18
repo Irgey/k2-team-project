@@ -1,12 +1,12 @@
 <!-- <button type="button" data-modal-open>Now shop</button> -->
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-show" data-modal>
   <div class="modal-contact-us">
     <button class="modal-btn-close" type="button" data-modal-close>
       <svg class="modal__icon-close" width="18" height="18">
         <use href="./images/sprite.svg#icon-close-menu"></use>
       </svg>
     </button>
-    <strong class="modal-contact-us__title-">Contact us</strong>
+    <strong class="modal-contact-us__title">Contact us</strong>
     <p class="modal-contact-us__text">
       If you have any additional questions or you want to clarify something
       before you make an order please fill in your contact details. We will call
@@ -21,19 +21,23 @@
           name="user_name"
           placeholder="Your name"
           id="user_name"
+          minlength="2"
         />
-      </div>
-      <label class="modal-contact-us__form-lable" for="user_mail">Email</label>
-      <div class="modal-contact-us__form-wrapper">
+        <!-- </div> -->
+        <label class="modal-contact-us__form-lable" for="user_mail"
+          >Email</label
+        >
+        <!-- <div class="modal-contact-us__form-wrapper"> -->
         <input
           class="modal-contact-us__form-input"
           type="email"
           name="user_mail"
           placeholder="Your email"
           id="user_mail"
+          minlength="13"
         />
+        <button class="button-submit" type="submit">Send</button>
       </div>
-      <button class="button-submit" type="submit">Send</button>
     </form>
   </div>
 </div>
