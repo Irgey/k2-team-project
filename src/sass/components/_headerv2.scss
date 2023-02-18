@@ -1,23 +1,23 @@
 .header__container {
   display: flex;
   padding-top: 16px;
-  @media screen and (min-width: 768px) {
+  @include media-tablet-min(767.98px) {
     padding-top: 24px;
   }
-  @media screen and (min-width: 1280px) {
+  @include media-desktop-min(1279.98px) {
     padding-top: 28px;
   }
 }
 .logo-header {
   fill: $main-black;
-  @media screen and (min-width: 768px) {
+  @include media-tablet-min(767.98px) {
     margin-right: 80px;
   }
-  @media screen and (min-width: 1280px) {
+  @include media-desktop-min(1279.98px) {
     margin-right: 261px;
   }
   &__icon {
-    @media screen and (min-width: 768px) {
+    @include media-tablet-min(767.98px) {
       width: 72px;
       height: 57px;
     }
@@ -27,10 +27,10 @@
   display: flex;
   align-items: center;
   gap: 24px;
-  @media screen and (min-width: 1280px) {
+  @include media-desktop-min(1279.98px) {
     gap: 48px;
   }
-  @media screen and (max-width: 767.98px) {
+  @include media-tablet-max(767.98px) {
     display: none;
   }
 }
@@ -50,7 +50,7 @@
   margin-left: auto;
   background-color: transparent;
   border: none;
-  @media screen and (min-width: 768px) {
+  @include media-tablet-min(767.98px) {
     width: 24px;
     height: 24px;
     padding-top: 16px;
@@ -59,7 +59,7 @@
       height: 22px;
     }
   }
-  @media screen and (min-width: 1280px) {
+  @include media-desktop-min(1279.98px) {
     width: 28px;
     height: 28px;
   }
@@ -71,7 +71,7 @@
   margin-left: 14px;
   background-color: transparent;
   border: none;
-  @media screen and (min-width: 768px) {
+  @include media-tablet-min(767.98px) {
     display: none;
   }
 }

@@ -11,17 +11,17 @@
     padding: 60px 40px 60px 24px;
   }
 
-  @include media-desktop-min($media: 1280px) {
+  @include media-desktop-min($media: 1279.98px) {
     padding: 72px 48px 72px 24px;
   }
 
   &__top-container {
     display: flex;
     column-gap: 20px;
-    @media (min-width: 768px) {
+    @include media-tablet-min(767.98px) {
       gap: 44px;
     }
-    @media (min-width: 1280px) {
+    @include media-desktop-min(1279.98px) {
       gap: 80px;
       margin-right: auto;
     }
@@ -30,10 +30,10 @@
   &__bottom-container {
     display: flex;
     column-gap: 10px;
-    @media (min-width: 768px) {
+    @include media-tablet-min(767.98px) {
       gap: 64px;
     }
-    @media (min-width: 1280px) {
+    @include media-tablet-min(767.98px) {
       gap: 208px;
     }
   }
@@ -42,18 +42,18 @@
 .container__footer {
   margin: 0 auto;
 
-  @media screen and (max-width: 767.98px) {
+  @include media-tablet-max(767.98px) {
     max-width: 480px;
   }
 
-  @media screen and (min-width: 768px) {
+  @include media-tablet-min(767.98px) {
     display: flex;
     justify-content: start;
     gap: 44px;
     width: 768px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @include media-desktop-min(1279.98px) {
     width: 1280px;
     justify-content: space-between;
 
@@ -68,7 +68,7 @@
   font-weight: 700;
   line-height: calc(22 / 18);
   color: #ffffff;
-  @media (min-width: 768px) {
+  @include media-tablet-min(767.98px) {
     font-size: 20px;
     line-height: calc(24 / 20);
   }
@@ -79,7 +79,7 @@
   font-weight: 500;
   line-height: calc(17 / 14);
   color: #ffffff;
-  @media (min-width: 768px) {
+  @include media-tablet-min(767.98px) {
     font-size: 16px;
     line-height: calc(19 / 16);
   }
@@ -88,14 +88,14 @@
 .logo {
   display: none;
 
-  @media screen and (min-width: 1280px) {
+  @include media-desktop-min(1279.98px) {
     display: block;
     margin-right: 210px;
   }
 }
 
 .container--basic {
-  @media screen and (max-width: 767.98px) {
+  @include media-tablet-max(767.98px) {
     flex-basis: calc((100% - 40px) / 2);
   }
 }
@@ -115,7 +115,7 @@
 
 .navigation__item:last-child {
   margin-bottom: 32px;
-  @media (min-width: 768px) {
+  @include media-tablet-min(767.98px) {
     margin-bottom: 0;
   }
 }
@@ -154,7 +154,7 @@
   }
 
   &__mail--replace {
-    @media screen and (max-width: 767.98px) {
+    @include media-tablet-max(767.98px) {
       display: block;
     }
   }
@@ -169,7 +169,7 @@
   gap: 24px;
   display: flex;
 
-  @media screen and (min-width: 768px) {
+  @include media-tablet-min(767.98px) {
     flex-direction: column;
   }
 }
