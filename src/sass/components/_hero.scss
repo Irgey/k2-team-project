@@ -5,14 +5,19 @@
 */
 .hero {
   background-color: $main-white;
+  padding-top: 44px;
   padding-bottom: 100px;
+  @media screen and (min-width: 768px) {
+    padding-top: 38px;
+  }
   @media screen and (min-width: 1280px) {
+    padding-top: 59px;
     padding-bottom: 105px;
   }
 
   .hero__box {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     position: relative;
     z-index: 1;
@@ -26,20 +31,19 @@
   color: $main-font-color;
   mix-blend-mode: normal;
   margin: 0;
-  position: absolute;
-  bottom: 291px;
+   position: absolute;
+  bottom: -36px;
+  
   z-index: 2;
   @media screen and (min-width: 768px) {
     font-size: 120px;
     line-height: calc(146 / 120);
-    top: 622px;
-    left: 31px;
+    bottom: -94px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 160px;
     line-height: calc(195 / 160);
-    top: 593px;
-    left: 178px;
+    bottom: -93px;
   }
 }
 .hero__text {
@@ -47,15 +51,18 @@
   font-size: 14px;
   line-height: calc(17 / 14);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 14px;
   @media screen and (min-width: 768px) {
     font-size: 24px;
     line-height: calc(29 / 24);
     text-shadow: none;
+    margin-right: 40px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 32px;
     line-height: calc(39 / 32);
     text-shadow: none;
+    margin-right: 110px;
   }
 }
 .hero__wrapper {
@@ -73,6 +80,7 @@
   justify-content: center;
   padding: 0;
   background-color: inherit;
+  margin-left: 8px;
   border: transparent;
 
   transition-property: transform;
@@ -87,10 +95,12 @@
   @media screen and (min-width: 768px) {
     width: 145px;
     height: 150px;
+    margin-left: 20px;
   }
   @media screen and (min-width: 1280px) {
     width: 166px;
     height: 166px;
+    margin-left: 110px;
   }
 }
 .hero__icon {
@@ -107,6 +117,9 @@
 
   .hero__button:hover & {
     transform: scale(1.3);
+    @media screen and (min-width: 1280px) {
+      transform: rotate(-122deg);
+    }
   }
 }
 
