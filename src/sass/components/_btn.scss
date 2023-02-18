@@ -36,3 +36,29 @@
     background-color: $button-focused-color;
   }
 }
+.button-order {
+  display: block;
+  padding: 10px 35px;
+  margin: 0 auto;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  text-align: center;
+  cursor: pointer;
+  background: $button-default-color;
+  border-color: transparent;
+  border-radius: 38px;
+  color: $main-white;
+  &:hover {
+    background-color: $button-hovered-color;
+  }
+  &:focus {
+    background-color: $button-focused-color;
+  }
+  @media screen and (min-width: 767.98px) {
+    padding: 20px 43.5px;
+    font-size: 28px;
+    line-height: calc(24 / 28);
+  }
+}

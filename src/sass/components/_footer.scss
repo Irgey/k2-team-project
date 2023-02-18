@@ -3,90 +3,173 @@
   |  Footer section
   |============================
 */
-
 .footer {
-  background-color: $main-black;
-  min-width: 320px;
-  padding: 32px 16px;
+  background-color: #000000;
+  margin: 0 auto;
+
+  @include media-tablet-max($media: 1279.98px) {
+    padding: 60px 40px 60px 24px;
+  }
+
+  @include media-desktop-min($media: 1280px) {
+    padding: 72px 48px 72px 24px;
+  }
+
+  &__top-container {
+    display: flex;
+    column-gap: 20px;
+    @media (min-width: 768px) {
+      gap: 44px;
+    }
+    @media (min-width: 1280px) {
+      gap: 80px;
+      margin-right: auto;
+    }
+  }
+
+  &__bottom-container {
+    display: flex;
+    column-gap: 10px;
+    @media (min-width: 768px) {
+      gap: 64px;
+    }
+    @media (min-width: 1280px) {
+      gap: 208px;
+    }
+  }
 }
 
-.footer__nav {
+.container__footer {
+  margin: 0 auto;
+
+  @media screen and (max-width: 767.98px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: start;
+    gap: 44px;
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    justify-content: space-between;
+
+    &:last-child {
+      margin-right: 208px;
+    }
+  }
+}
+
+.footer--title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: calc(22 / 18);
+  color: #ffffff;
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+}
+
+.basic--text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: calc(17 / 14);
+  color: #ffffff;
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+  }
+}
+
+.logo {
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+    margin-right: 210px;
+  }
+}
+
+.container--basic {
+  @media screen and (max-width: 767.98px) {
+    flex-basis: calc((100% - 40px) / 2);
+  }
+}
+
+.navigation {
+  &__title {
+    margin-bottom: 18px;
+  }
+
+  &__item {
+    margin-bottom: 12px;
+    &__item:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.navigation__item:last-child {
   margin-bottom: 32px;
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
-.fotlower-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  align-content: flex-start;
-}
-
-.opentimes {
-  display: flex;
-  flex-direction: column;
-  align-content: flex-end;
-  justify-content: flex-end;
-  align-items: flex-end;
-  flex-wrap: wrap;
-}
-
-.footer__svg {
-  display: flex;
-  gap: 14px;
-  align-content: flex-end;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-.anchor__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  gap: 12px;
+.open-time {
+  &__title {
+    margin-bottom: 18px;
+    white-space: nowrap;
+  }
 }
 
 .contacts {
+  &__title {
+    margin-bottom: 18px;
+  }
+
+  &__tel {
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  &__mail {
+    margin-bottom: 7px;
+  }
+
+  &__mail--replace {
+    margin-bottom: 12px;
+  }
+
+  &__addr {
+    margin-bottom: 7px;
+  }
+
+  &__addr--replace {
+    display: block;
+  }
+
+  &__mail--replace {
+    @media screen and (max-width: 767.98px) {
+      display: block;
+    }
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+  display: block;
+}
+
+.footer-socials {
+  gap: 24px;
   display: flex;
-  align-content: flex-start;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
 
-.contacts__list {
-  display: flex;
-  list-style: none;
-  gap: 12px;
-  align-content: flex-start;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  flex-direction: column;
-}
-
-.footer__uppertitle {
-  margin-bottom: 18px;
-}
-
-.footer__uppertitle,
-.anchor__item,
-.contacts__item,
-.footer__subtitle {
-  color: $main-white;
-}
-
-.footer__link {
-  fill: $main-white;
-}
-
-.logo-footer__icon {
-  color: $main-white;
-  fill: $main-white;
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+  }
 }
