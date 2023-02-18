@@ -28,6 +28,14 @@
   }
 }
 
+// ronald mixin
+
+@mixin media-desktop-min($media: 1280px) {
+  >>>>>>>origin/Ronaldr-footer @media (min-width: $media) {
+    @content;
+  }
+}
+
 /**
   |============================
   |  Example of use:
