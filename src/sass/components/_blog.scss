@@ -45,6 +45,7 @@
     }
   }
 }
+
 .swiper-slide__content {
   height: 300px;
 }
@@ -57,9 +58,16 @@
   border: none;
   background: transparent;
   fill: $main-white;
+  width: 41px;
+  height: 27px;
 
-  &:after {
+  &::after {
     display: none;
+  }
+
+  @include media-tablet-min(767.98px) {
+    width: 97px;
+    height: 64px;
   }
 }
 
@@ -67,8 +75,15 @@
   border: none;
   background: transparent;
   fill: $main-white;
+  width: 41px;
+  height: 27px;
 
-  &:after {
+  &::after {
     display: none;
+  }
+
+  @include media-tablet-min(767.98px) {
+    width: 97px;
+    height: 64px;
   }
 }
