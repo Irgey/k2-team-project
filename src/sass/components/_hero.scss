@@ -31,9 +31,9 @@
   color: $main-font-color;
   mix-blend-mode: normal;
   margin: 0;
-   position: absolute;
+  position: absolute;
   bottom: -36px;
-  
+
   z-index: 2;
   @media screen and (min-width: 768px) {
     font-size: 120px;
@@ -44,7 +44,7 @@
     font-size: 160px;
     line-height: calc(195 / 160);
     bottom: -93px;
-      }
+  }
 }
 .hero__title-element::before {
   position: absolute;
@@ -52,8 +52,8 @@
   height: 0px;
   right: 0;
   top: 0;
-  
-  border: 8px solid #0E0E0E;
+
+  border: 8px solid #0e0e0e;
 }
 .hero__text {
   font-weight: 400;
@@ -80,7 +80,6 @@
 .hero__wrapper {
   width: 145px;
   height: 274px;
-  
 
   @media screen and (min-width: 768px) {
     width: 390px;
