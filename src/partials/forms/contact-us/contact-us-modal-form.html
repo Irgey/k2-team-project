@@ -1,5 +1,5 @@
 <!-- <button type="button" data-modal-open>Now shop</button> -->
-<div class="backdrop is-show" data-modal>
+<div class="backdrop is-hidden" data-modal>
   <div class="modal-contact-us">
     <button class="modal-btn-close" type="button" data-modal-close>
       <svg class="modal__icon-close" width="18" height="18">
@@ -36,7 +36,14 @@
           id="user_mail"
           minlength="13"
         />
-        <button class="button-submit" type="submit">Send</button>
+        <button
+          class="button-submit"
+          type="button"
+          data-modal-close-open
+          data-modal-open-Ty
+        >
+          Send
+        </button>
       </div>
     </form>
   </div>
