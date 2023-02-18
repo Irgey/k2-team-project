@@ -4,6 +4,36 @@
   |============================
 */
 
+//  Header Andrii
+
+.headwrapper {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.headersection {
+  // padding-top: 16px;
+  // padding-right: 16px;
+  // padding-left: 16px;
+}
+
+.burger__menu {
+  border: none;
+  background: transparent;
+  border: transparent;
+}
+
+.header-nav__link {
+  margin-right: 14px;
+}
+
+//  Others code
+
 .nav__link {
   text-decoration: none;
   color: rgb(255, 99, 71);

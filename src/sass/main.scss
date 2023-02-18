@@ -4,6 +4,10 @@
 @import './utils/variables';
 @import './utils/visually-hidden';
 
+//  JS styles
+
+// @import './js/slider.js';
+
 //  Base styles
 @import './base/animations';
 @import './base/common';
@@ -20,6 +24,7 @@
 @import './components/btn';
 @import './components/delivery';
 @import './components/about';
+@import './components/blog';
 
 // Forms styles
 @import './components/forms/contact-us/contact-us-thank-you-modal';
