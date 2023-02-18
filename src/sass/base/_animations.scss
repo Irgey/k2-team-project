@@ -3,3 +3,36 @@
   |  Animations
   |============================
 */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@include media-tablet-min(767.98px) {
+  .top {
+    position: fixed;
+    bottom: 40px;
+    right: 60px;
+    padding: 8px 16px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+
+    &:hover {
+      text-decoration: none;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .scrolltop {
+    text-transform: uppercase;
+    color: $main-white;
+    text-decoration: none;
+    font-size: 35px;
+    background-image: linear-gradient(-125deg, orangered, rebeccapurple);
+
+    &:hover {
+      text-decoration: underline;
+      background-image: linear-gradient(-125deg, darksalmon, darkorchid);
+    }
+  }
+}
