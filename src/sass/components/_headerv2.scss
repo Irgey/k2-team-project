@@ -1,0 +1,92 @@
+.header__container {
+  display: flex;
+  padding-top: 16px;
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 28px;
+  }
+}
+.logo-header {
+  fill: $main-black;
+  @media screen and (min-width: 768px) {
+    margin-right: 80px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 261px;
+  }
+  &__icon {
+    @media screen and (min-width: 768px) {
+      width: 72px;
+      height: 57px;
+    }
+  }
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  @media screen and (min-width: 1280px) {
+    gap: 48px;
+  }
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+}
+.nav__item {
+  padding-top: 16px;
+}
+.nav__link {
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  color: $main-black;
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+.contact-button {
+  width: 22px;
+  height: 22px;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  @media screen and (min-width: 768px) {
+    width: 24px;
+    height: 24px;
+    padding-top: 16px;
+    &__icon {
+      width: 22px;
+      height: 22px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.header__btn-menu {
+  width: 24px;
+  height: 24px;
+  margin-left: 14px;
+  background-color: transparent;
+  border: none;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu-toggle {
+  min-height: 24px;
+  min-width: 24px;
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  fill: $main-white;
+}
