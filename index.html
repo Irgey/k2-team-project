@@ -20,7 +20,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     
     <script type="module" crossorigin src="/k2-team-project/assets/index-b38f4138.js"></script>
-    <link rel="stylesheet" href="/k2-team-project/assets/index-dd2b2fe2.css">
+    <link rel="stylesheet" href="/k2-team-project/assets/index-86edce50.css">
   </head>
   <body>
     <header class="header">
@@ -208,7 +208,7 @@
         <p class="store__text">from $60</p>
       </li>
     </ul>
-    <button type="button" class="button-order" data-modal-open>
+    <button type="button" class="button-order" data-modal-open-flower>
       Order flowers
     </button>
   </div>
@@ -336,7 +336,7 @@
         <use href="/k2-team-project/assets/sprite-d3ee900b.svg#icon-close-menu"></use>
       </svg>
     </button>
-    <strong class="modal-contact-us__title-">Contact us</strong>
+    <strong class="modal-contact-us__title">Contact us</strong>
     <p class="modal-contact-us__text">
       If you have any additional questions or you want to clarify something
       before you make an order please fill in your contact details. We will call
@@ -351,28 +351,43 @@
           name="user_name"
           placeholder="Your name"
           id="user_name"
+          minlength="2"
         />
-      </div>
-      <label class="modal-contact-us__form-lable" for="user_mail">Email</label>
-      <div class="modal-contact-us__form-wrapper">
+        <!-- </div> -->
+        <label class="modal-contact-us__form-lable" for="user_mail"
+          >Email</label
+        >
+        <!-- <div class="modal-contact-us__form-wrapper"> -->
         <input
           class="modal-contact-us__form-input"
           type="email"
           name="user_mail"
           placeholder="Your email"
           id="user_mail"
+          minlength="13"
         />
+        <button
+          class="button-submit"
+          type="button"
+          data-modal-close-open
+          data-modal-open-Ty
+        >
+          Send
+        </button>
       </div>
-      <button class="button-submit" type="submit">Send</button>
     </form>
   </div>
 </div>
 <script src="./js/modal.js"></script>
 
-    <div class="" data-modal>
+    <div class="backdrop is-hidden" data-modal-Ty>
   <!-- <div class="backdrop is-hidden" data-modal> -->
   <div class="modal-thank-you">
-    <button class="modal-btn-close" aria-label="Close window" data-modal-close>
+    <button
+      class="modal-btn-close"
+      aria-label="Close window"
+      data-modal-close-Ty
+    >
       <svg class="modal__icon-close" width="18" height="18">
         <use href="/k2-team-project/assets/sprite-d3ee900b.svg#close"></use>
       </svg>
@@ -405,12 +420,13 @@
     <button
       class="button-continue"
       aria-label="continue and close window"
-      data-modal-close
+      data-modal-close-open-Ty
     >
       Continue
     </button>
   </div>
 </div>
+<script src="./js/modal-ty.js"></script>
 
     <div class="" data-modal>
   <!-- <div class="backdrop is-hidden" data-modal> -->
