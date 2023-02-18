@@ -1,11 +1,63 @@
+<!-- Header -->
+
 <header class="header">
   <div class="container container-mob">
-    <nav class="mob-menu">
-      <a class="mob-menu__logo logo-mob" href="./index.html">
-        <svg>
-          <use path="../src/images/sprite.svg"></use>
+    <nav class="nav">
+      <a class="nav__logo logo-mob" href="./index.html">
+        <svg class="nav__icon" width="45" height="35">
+          <use href="../images/sprite.svg#icon-mob-logo"></use>
         </svg>
       </a>
+
+       <div class="mob-menu">
+                    <a class="nav__tel" href="./index.html">
+        <svg class="nav__icon-tel" width="22" height="22">
+          <use href="../images/sprite.svg#icon-header-tel"></use>
+        </svg>
+      </a>
+            <button
+              class="menu-toggle js-open-menu"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg class="" width="24" height="24">
+                <use
+                  class="icon-open"
+                  href="../images/sprite.svg#icon-burger"
+                ></use>
+              </svg>
+            </button>
     </nav>
   </div>
 </header>
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu" type="button">
+        <svg width="24" height="24">
+          <use
+            class="icon-cross"
+            href="../images/sprite.svg#icon-close-menu"
+          ></use>
+        </svg>
+      </button>
+        <div class="mob-menu-wrapper">
+        <ul class="nav-mob__list">
+          <li class="nav-mob__item">
+            <a class="nav-mob__link current" href="#">Anemone</a>
+          </li>
+          <li class="nav-mob__item">
+            <a class="nav-mob__link" href="#">About us</a>
+          </li>
+          <li class="nav-mob__item">
+            <a class="nav-mob__link" href="#">Store</a>
+          </li>
+            <li class="nav-mob__item">
+            <a class="nav-mob__link" href="#">Delivery</a>
+          </li>
+               <li class="nav-mob__item">
+            <a class="nav-mob__link" href="#">Blog</a>
+          </li>
+        </ul>
+    </div>
+  </div>
