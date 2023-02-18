@@ -9,11 +9,24 @@
   flex-wrap: wrap;
   list-style: none;
   text-decoration: none;
+
+  @include media-tablet-min(1279.98px) {
+    padding: 0 96px;
+  }
 }
 
 .delivery__item {
   display: flex;
   align-items: center;
+  margin-bottom: 14px;
+
+  @include media-tablet-min(767.98px) {
+    margin-bottom: 20px;
+  }
+
+  @include media-desktop-min(1279.98px) {
+    margin-bottom: 32px;
+  }
 }
 
 .delivery-item__text {
@@ -22,11 +35,56 @@
   font-weight: 500;
   font-size: 14px;
   line-height: calc(17 / 14);
+  margin: 0;
+
+  @include media-tablet-min(767.98px) {
+    font-size: 24px;
+    line-height: calc(29 / 24);
+  }
+
+  @include media-desktop-min(1279.98px) {
+    font-size: 32px;
+    line-height: calc(39 / 32);
+  }
 }
 
 .delivery__img {
   margin-top: 26px;
+  position: relative;
+  left: -16px;
+  max-width: calc(100% + 32px);
+
+  @include media-tablet-min(767.98px) {
+    margin-top: 40px;
+    left: -24px;
+    max-width: calc(100% + 48px);
+  }
+
+  @include media-desktop-min(1279.98px) {
+    margin-top: 60px;
+  }
 }
+
+// .wallpaper {
+//   margin-top: 26px;
+//   margin-bottom: 0;
+//   margin-left: auto;
+//   margin-right: auto;
+//   background-image: url(../images/delivery/image_delivery_mob@1x.jpg);
+//   min-width: 320px;
+//   max-width: 768px;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+
+//   @include media-tablet-min(767.98px) {
+//     margin-top: 40px;
+//   }
+
+//   @include media-desktop-min(1279.98px) {
+//     margin-top: 60px;
+//   }
+// }
 
 // .delivery-item__digit-edit {
 //   width: 40px;
@@ -48,6 +106,20 @@
   text-align: center;
   margin-top: 5px;
   margin-bottom: 6px;
+
+  @include media-tablet-min(767.98px) {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 3px;
+    margin-top: 0;
+    margin-right: 20px;
+  }
+
+  @include media-desktop-min(1279.98px) {
+    margin-right: 32px;
+    margin-top: 11px;
+    margin-bottom: 9px;
+  }
 }
 
 .digit {
@@ -59,4 +131,11 @@
   font-size: 20px;
   line-height: calc(24 / 20);
   color: $main-black;
+
+  @include media-tablet-min(767.98px) {
+    font-size: 26px;
+    line-height: calc(32 / 26);
+    width: 15px;
+    height: 32px;
+  }
 }
