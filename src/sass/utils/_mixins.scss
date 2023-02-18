@@ -16,12 +16,6 @@
   }
 }
 
-@mixin media-desktop-max($media: 1279.98px) {
-  @media (max-width: $media) {
-    @content;
-  }
-}
-
 @mixin media-desktop-min($media: 1279.98px) {
   @media (min-width: $media) {
     @content;
