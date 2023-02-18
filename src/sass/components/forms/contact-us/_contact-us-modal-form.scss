@@ -28,10 +28,11 @@
 }
 
 .modal-contact-us {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 2;
 
   background-color: $main-white;
   transition: opacity 250ms, transform 250ms;
@@ -60,7 +61,6 @@
   outline: none;
   &:hover,
   &:focus {
-    fill: #e86f54;
   }
   @media screen and (min-width: 768px) {
     top: 28px;
@@ -101,11 +101,14 @@
 
 .modal-contact-us__form-lable {
   display: block;
-  font-size: 12px;
+  font-size: 10px;
   margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
 }
 
-.modal-contact-us__form-wrapper.first {
+.modal-contact-us__form-input {
   margin-bottom: 14px;
   @media screen and (min-width: 768px) {
     margin-bottom: 24px;
@@ -136,7 +139,7 @@
   border: 0;
   margin: 0;
   padding: 0;
-  margin-top: 24px;
+  margin-top: 10px;
   background-color: $button-unactive-color;
   border-radius: 8px;
   width: 100%;
@@ -150,10 +153,25 @@
   line-height: 17px;
   color: #ffffff;
   @media screen and (min-width: 768px) {
-    margin-top: 38px;
+    margin-top: 14px;
+    height: 50px;
   }
 }
 
-.modal-contact-us__form-input ::placeholder:focus .button-submit {
+.modal-contact-us__form-input:not(:placeholder-shown)
+  ~ .modal-contact-us__form-input:not(:placeholder-shown)
+  + .button-submit {
   background-color: $button-default-color;
+}
+.modal-contact-us__form-input::placeholder {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  @media screen and (min-width: 768px) {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
 }
