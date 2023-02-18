@@ -23,7 +23,7 @@
 html {
   -moz-tab-size: 4;
   -o-tab-size: 4;
-  tab-size: 4;
+     tab-size: 4;
 }
 
 html {
@@ -36,8 +36,7 @@ body {
 }
 
 body {
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 hr {
@@ -47,7 +46,7 @@ hr {
 
 abbr[title] {
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 b,
@@ -59,8 +58,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo,
-    monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
   font-size: 1em;
 }
 
@@ -105,9 +103,9 @@ select {
   text-transform: none;
 }
 
-[type='button'],
-[type='reset'],
-[type='submit'],
+[type=button],
+[type=reset],
+[type=submit],
 button {
   -webkit-appearance: button;
 }
@@ -138,7 +136,7 @@ progress {
   height: auto;
 }
 
-[type='search'] {
+[type=search] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
@@ -170,9 +168,48 @@ summary {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-  clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/**
+  |============================
+  |  Buttons 
+  |============================
+*/
+.modal-btn-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+.button-continue {
+  display: block;
+  padding: 10px 86px;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2142857143;
+  text-align: center;
+  background: #e86f54;
+  border-color: transparent;
+  border-radius: 8px;
+  color: #ffffff;
+}
+.button-continue:hover {
+  background-color: #e25b41;
+}
+.button-continue:focus {
+  background-color: #fa6f54;
 }
 
 /**
@@ -202,7 +239,7 @@ summary {
   }
 }
 .title:after {
-  content: '';
+  content: "";
   flex-grow: 1;
   height: 1px;
   border: 1px solid #000000;
@@ -317,8 +354,17 @@ ol {
   |  Hero section
   |============================
 */
-/* .hero {
+.hero {
   background-color: #ffffff;
+  margin-bottom: 100px;
+}
+.hero .hero__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 354px;
+  z-index: 1;
 }
 
 .hero__title {
@@ -328,42 +374,55 @@ ol {
   text-align: center;
   color: #000000;
   mix-blend-mode: normal;
+  margin: 0;
+  position: absolute;
+  top: 291px;
+  z-index: 2;
 }
 
 .hero_text {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-}
- */
-/**
-  |============================
-  |  Header section
-  |============================
-*/
-/* .headwrapper {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-  padding-top: 16px;
-  padding-right: 16px;
-  padding-left: 16px;
-}
-
-.burger__menu {
-  border: none;
-  background: transparent;
-  border: transparent;
-}
-
-.header-nav__link {
   margin-right: 14px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.nav__link {
-  text-decoration: none;
-  color: rgb(255, 99, 71); */
+.hero__button {
+  padding: 0;
+  width: 64px;
+  height: 76px;
+  background-color: inherit;
+  border: transparent;
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 100ms;
+}
+.hero__button:hover, .hero__button:focus {
+  transform: rotate(-122.8deg);
+}
+@media screen and (min-width: 768px) {
+  .hero__button {
+    width: 145px;
+    height: 150px;
+  }
+}
+
+.icon-mbl {
+  display: inline-block;
+  width: 64px;
+  height: 76px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon-main-btn-mob {
+  width: 64px;
+  height: 76px;
+}
+
 .nav {
   display: flex;
   padding-top: 16px;
@@ -460,7 +519,7 @@ ol {
 .nav-mob__list .nav-mob__link {
   display: block;
   color: var(--title-txt-color);
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-size: 20px;
   line-height: 1.2;
@@ -557,45 +616,6 @@ ol {
 .logo-footer__icon {
   color: #ffffff;
   fill: #ffffff;
-}
-
-/**
-  |============================
-  |  Buttons 
-  |============================
-*/
-.modal-btn-close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 30px;
-  height: 30px;
-  background-color: transparent;
-  border: none;
-  border-radius: 50%;
-}
-
-.button-continue {
-  display: block;
-  padding: 10px 86px;
-  margin: 0 auto;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.2142857143;
-  text-align: center;
-  background: #e86f54;
-  border-color: transparent;
-  border-radius: 8px;
-  color: #ffffff;
-}
-.button-continue:hover {
-  background-color: #e25b41;
-}
-.button-continue:focus {
-  background-color: #fa6f54;
 }
 
 /**
@@ -806,7 +826,7 @@ ol {
   bottom: 0;
   right: 0;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   transform: scale(0.8);
 }
 .swiper-slide.swiper-slide-active {
@@ -831,6 +851,7 @@ ol {
   fill: #ffffff;
   width: 41px;
   height: 27px;
+  top: 200px;
 }
 .swiper-button-prev::after {
   display: none;
@@ -848,6 +869,7 @@ ol {
   fill: #ffffff;
   width: 41px;
   height: 27px;
+  top: 200px;
 }
 .swiper-button-next::after {
   display: none;
@@ -857,6 +879,63 @@ ol {
     width: 97px;
     height: 64px;
   }
+}
+
+.newsletter {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 767.98px) {
+  .newsletter {
+    flex-direction: column;
+  }
+}
+
+.newsletter__uppertitle {
+  margin-top: 28px;
+  margin-bottom: 32px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  text-align: center;
+}
+@media (min-width: 767.98px) {
+  .newsletter__uppertitle {
+    font-size: 32px;
+    line-height: 1.21875;
+  }
+}
+
+.newsletter__sbsbtn {
+  border-radius: 38px;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1.3333333333;
+  color: #ffffff;
+  background: #e86f54;
+  padding: 8px 39.5px;
+  border-color: transparent;
+  outline: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 767.98px) {
+  .newsletter__sbsbtn {
+    font-size: 28px;
+    line-height: 0.8571428571;
+    padding: 20px 69.5px;
+  }
+}
+.newsletter__sbsbtn:hover {
+  outline: auto;
+}
+.newsletter__sbsbtn:focus {
+  outline: auto;
 }
 
 /**
@@ -991,8 +1070,7 @@ ol {
   left: 50%;
   transform: translate(-50%, -50%);
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: opacity 250ms, transform 250ms;
   padding: 28px 16px;
@@ -1019,8 +1097,7 @@ ol {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
-.modal-contact-us__btn:hover,
-.modal-contact-us__btn:focus {
+.modal-contact-us__btn:hover, .modal-contact-us__btn:focus {
   fill: #e86f54;
 }
 @media screen and (min-width: 768px) {
@@ -1033,7 +1110,7 @@ ol {
 .modal-contact-us__title {
   display: block;
   margin-bottom: 14px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -1050,7 +1127,7 @@ ol {
 
 .modal-contact-us__text {
   margin-bottom: 18px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -1113,7 +1190,7 @@ ol {
   width: 100%;
   height: 37px;
   text-align: center;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -1279,11 +1356,18 @@ ol {
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-color: transparent;
   border: none;
   border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .modal__icon-close {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .button-subscribe {
@@ -1319,4 +1403,4 @@ ol {
   |============================
   |  Connections 
   |============================
-*/ /*# sourceMappingURL=main.css.map */
+*//*# sourceMappingURL=main.css.map */
