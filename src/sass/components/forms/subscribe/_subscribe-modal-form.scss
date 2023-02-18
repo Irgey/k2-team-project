@@ -131,18 +131,16 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   background-color: transparent;
   border: none;
   border-radius: 50%;
+}
+.modal__icon-close {
   @media screen and (min-width: 768px) {
-    width: 40px;
-    height: 40px;
-    .modal__icon-close {
-      width: 25px;
-      height: 25px;
-    }
+    width: 24px;
+    height: 24px;
   }
 }
 .button-subscribe {
