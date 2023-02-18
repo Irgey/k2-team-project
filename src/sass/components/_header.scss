@@ -1,40 +1,77 @@
-/**
-  |============================
-  |  Header section
-  |============================
-*/
+// Header section
 
 //  Header Andrii
 
-.headwrapper {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-  padding-top: 16px;
-  padding-right: 16px;
-  padding-left: 16px;
-}
+// .headwrapper {
+//   display: flex;
+//   align-items: center;
+//   align-content: center;
+//   justify-content: space-between;
+//   padding-top: 16px;
+//   padding-right: 16px;
+//   padding-left: 16px;
+// }
 
-.headersection {
-  // padding-top: 16px;
-  // padding-right: 16px;
-  // padding-left: 16px;
-}
+// .headersection {
+//   // padding-top: 16px;
+//   // padding-right: 16px;
+//   // padding-left: 16px;
+// }
 
-.burger__menu {
-  border: none;
-  background: transparent;
-  border: transparent;
-}
+// .burger__menu {
+//   border: none;
+//   background: transparent;
+//   border: transparent;
+// }
 
-.header-nav__link {
-  margin-right: 14px;
-}
+// .header-nav__link {
+//   margin-right: 14px;
+// }
 
 //  Others code
 
-.nav__link {
-  text-decoration: none;
-  color: rgb(255, 99, 71);
+.nav {
+  display: flex;
+  padding-top: 16px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.nav__logo {
+  display: block;
+  width: 45px;
+  height: 35px;
+}
+
+.nav__icon {
+  fill: $main-black;
+}
+
+.menu-toggle {
+  min-height: 24px;
+  min-width: 24px;
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.nav__tel {
+  display: block;
+  padding-top: 2px;
+}
+
+.mob-menu {
+  display: flex;
+  gap: 14px;
+}
+
+.icon-cross {
+  fill: $main-white;
 }
