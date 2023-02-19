@@ -20,7 +20,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     
     <script type="module" crossorigin src="/k2-team-project/assets/index-372b5817.js"></script>
-    <link rel="stylesheet" href="/k2-team-project/assets/index-d3d8b59c.css">
+    <link rel="stylesheet" href="/k2-team-project/assets/index-1c6b59ba.css">
   </head>
   <body>
     <header class="header">
@@ -35,7 +35,11 @@
       </a>
 
       <div class="mob-menu">
-        <button class="button-tel button-tel-mob" id="button-tel-mob">
+        <button
+          class="button-tel button-tel-mob"
+          data-modal-open-Flower
+          id="button-tel-mob"
+        >
           <svg class="nav-mob__icon-tel" width="22" height="22">
             <use href="/k2-team-project/assets/sprite-d3ee900b.svg#icon-header-tel"></use>
           </svg>
@@ -76,7 +80,7 @@
           <a class="nav__link" href="#blog">Blog</a>
         </li>
       </ul>
-      <button class="button-tel" id="button-tel">
+      <button class="button-tel" data-modal-open id="button-tel">
         <svg class="nav-mob__icon-tel" width="22" height="22">
           <use href="/k2-team-project/assets/sprite-d3ee900b.svg#icon-header-tel"></use>
         </svg>
@@ -341,7 +345,13 @@
 
       <div class="newsletter">
         <h3 class="newsletter__uppertitle">Follow to our newsletter</h3>
-        <button class="newsletter__sbsbtn" type="submit">Subscribe</button>
+        <button
+          class="newsletter__sbsbtn"
+          data-modal-open-Subscribe
+          type="button"
+        >
+          Subscribe
+        </button>
       </div>
     </div>
   </div>
@@ -455,11 +465,15 @@
 </div>
 <script src="./js/modal-ty.js"></script>
 
-    <div class="" data-modal>
+    <div class="backdrop is-hidden" data-modal-Subscribe>
   <!-- <div class="backdrop is-hidden" data-modal> -->
 
   <div class="modal-subscribe">
-    <button class="modal-btn-close" aria-label="Close window" data-modal-close>
+    <button
+      class="modal-btn-close"
+      aria-label="Close window"
+      data-modal-close-Subscribe
+    >
       <svg class="modal__icon-close" width="18" height="18">
         <use href="/k2-team-project/assets/sprite-d3ee900b.svg#close"></use>
       </svg>
@@ -510,13 +524,18 @@
           />
         </label>
 
-        <button class="button-subscribe" type="submit" data-modal-close>
+        <button
+          class="button-subscribe"
+          type="submit"
+          data-modal-close-open-Subscribe
+        >
           Subscribe
         </button>
       </form>
     </div>
   </div>
 </div>
+<script src="./js/modal-subscribe.js"></script>
 
     <!-- JS scripts -->
   </body>
