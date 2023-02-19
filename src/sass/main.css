@@ -424,6 +424,12 @@ a {
   fill: #000000;
 }
 
+.button-tel {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .menu-toggle {
   min-height: 24px;
   min-width: 24px;
