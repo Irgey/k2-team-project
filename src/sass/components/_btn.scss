@@ -56,7 +56,7 @@
   &:focus {
     background-color: $button-focused-color;
   }
-  @media screen and (min-width: 767.98px) {
+  @include media-tablet-min(767.98px) {
     padding: 20px 43.5px;
     font-size: 28px;
     line-height: calc(24 / 28);
