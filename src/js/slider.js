@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 1.5,
       },
       // tablet - desktop
-      768: {
+      1280: {
         slidesPerView: 3,
         scale: 1,
       },
