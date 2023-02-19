@@ -4,36 +4,13 @@
   |============================
 */
 
-
-// body {
-//   margin: 0;
-//   padding: 0;
-// }
-
-// ul,
-// ol {
-//   padding: 0;
-//   margin: 0;
-//   list-style-type: none;
-// }
-
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6,
-// p,
-// li,
-// a {
-//   text-decoration: none;
-//   margin: 0;
-//   cursor: pointer;
-// }
-
 .footer {
   background-color: #000000;
   margin: 0 auto;
+
+  @include media-mobile-max($media: 767.98px){
+  padding: 32px 16px;
+  }
   
 
   @include media-tablet-max($media: 1279.98px) {
@@ -57,8 +34,10 @@
   }
 
   &__bottom-container {
+
     display: flex;
     column-gap: 10px;
+
     @media (min-width: 768px) {
       gap: 64px;
     }
@@ -72,19 +51,19 @@
   margin: 0 auto;
 
   @media screen and (max-width: 767.98px) {
-    max-width: 480px;
+    width: 100%;
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: start;  
+    justify-content: space-between;  
     gap: 44px;
-    width: 768px;
+    width: 100%;
   }
 
   @media screen and (min-width: 1280px) {
     
-    width: 1280px;
+    width: 100%;
     justify-content: space-between;
    
     &:last-child {
@@ -116,15 +95,13 @@
 }
 
 .logo {
-  display: none;
+  display: none;  
 
   @media screen and (min-width: 1280px) {
     display: block;
-    margin-right: 210px;
+    margin-right: 210px;    
   }
 }
-
-
 
 .container--basic {
   @media screen and (max-width: 767.98px) {
@@ -191,7 +168,6 @@
     }
   }
 }
-
 
 .nowrap {
   white-space: nowrap;
