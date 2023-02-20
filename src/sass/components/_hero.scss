@@ -12,7 +12,7 @@
   }
   @media screen and (min-width: 1280px) {
     padding-top: 59px;
-    padding-bottom: 105px;
+    padding-bottom: 198px;
   }
 
   .hero__box {
@@ -43,17 +43,17 @@
   @media screen and (min-width: 1280px) {
     font-size: 160px;
     line-height: calc(195 / 160);
-    bottom: -93px;
+    bottom: -98px;
       }
 }
-.hero__title-element::before {
+.hero__title-element {
   position: absolute;
   width: 58px;
   height: 0px;
-  right: 0;
-  top: 0;
+  right: 20px;
+  top: 16px;
   
-  border: 8px solid #0E0E0E;
+  border: 4.5px solid #0E0E0E;
 }
 .hero__text {
   font-weight: 400;
@@ -74,7 +74,7 @@
     line-height: calc(39 / 32);
     text-shadow: none;
     margin-right: 110px;
-    margin-left: 110px;
+    margin-left: 90px;
   }
 }
 .hero__wrapper {
