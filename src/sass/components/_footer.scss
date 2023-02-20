@@ -3,15 +3,17 @@
   |  Footer section
   |============================
 */
+
 .footer {
   background-color: #000000;
   margin: 0 auto;
+  padding: 32px 16px;
 
-  @include media-tablet-max($media: 1279.98px) {
+  @include media-tablet-min(767.98px) {
     padding: 60px 40px 60px 24px;
   }
 
-  @include media-desktop-min($media: 1279.98px) {
+  @include media-desktop-min(1279.98px) {
     padding: 72px 48px 72px 24px;
   }
 
@@ -30,7 +32,8 @@
   &__bottom-container {
     display: flex;
     column-gap: 10px;
-    @include media-tablet-min(767.98px) {
+
+    @media (min-width: 768px) {
       gap: 64px;
     }
     @include media-tablet-min(767.98px) {
@@ -42,19 +45,19 @@
 .container__footer {
   margin: 0 auto;
 
-  @include media-tablet-max(767.98px) {
-    max-width: 480px;
+  @media screen and (max-width: 767.98px) {
+    width: 100%;
   }
 
   @include media-tablet-min(767.98px) {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     gap: 44px;
-    width: 768px;
+    width: 100%;
   }
 
-  @include media-desktop-min(1279.98px) {
-    width: 1280px;
+  @media screen and (min-width: 1280px) {
+    width: 100%;
     justify-content: space-between;
 
     &:last-child {
@@ -96,7 +99,7 @@
 
 .container--basic {
   @include media-tablet-max(767.98px) {
-    flex-basis: calc((100% - 40px) / 2);
+    flex-basis: calc((100% - 20px) / 2);
   }
 }
 

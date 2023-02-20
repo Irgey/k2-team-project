@@ -51,13 +51,15 @@
 .delivery__img {
   margin-top: 26px;
   position: relative;
-  left: -16px;
-  max-width: calc(100% + 32px);
+  margin-left: auto;
+  margin-right: auto;
+  // left: -16px;
+  // max-width: calc(100% + 32px);
 
   @include media-tablet-min(767.98px) {
     margin-top: 40px;
-    left: -24px;
-    max-width: calc(100% + 48px);
+    // left: -24px;
+    // max-width: calc(100% + 48px);
   }
 
   @include media-desktop-min(1279.98px) {
