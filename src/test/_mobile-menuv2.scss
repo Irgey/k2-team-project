@@ -10,7 +10,7 @@
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
-  @include media-tablet-min(767.98px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
@@ -44,16 +44,16 @@
   padding: 0;
   margin: 0;
   list-style: none;
-
+  color: $main-white;
   text-align: center;
 }
 
 .nav-mob__list .nav-mob__link {
   display: block;
+  color: var(--title-txt-color);
   font-family: 'Montserrat';
   font-style: normal;
   font-size: 20px;
   line-height: calc(24 / 20);
   text-decoration: none;
-  color: $main-white;
 }
