@@ -7,16 +7,13 @@
 .footer {
   background-color: #000000;
   margin: 0 auto;
+  padding: 32px 16px;
 
-  @include media-mobile-max($media: 767.98px) {
-    padding: 32px 16px;
-  }
-
-  @include media-tablet-max($media: 1279.98px) {
+  @include media-tablet-min(767.98px) {
     padding: 60px 40px 60px 24px;
   }
 
-  @include media-desktop-min($media: 1279.98px) {
+  @include media-desktop-min(1279.98px) {
     padding: 72px 48px 72px 24px;
   }
 
@@ -102,7 +99,7 @@
 
 .container--basic {
   @include media-tablet-max(767.98px) {
-    flex-basis: calc((100% - 40px) / 2);
+    flex-basis: calc((100% - 20px) / 2);
   }
 }
 
