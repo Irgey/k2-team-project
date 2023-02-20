@@ -53,26 +53,21 @@
         Be the first to get exclusive offers and the latest news on our product
         directly in your box.
       </p>
-      <form class="modal-subscribe__form">
+      <form class="modal-subscribe__form" name="subscribe_newsletter">
         <!-- Email field -->
         <label class="modal-label">
           <span class="modal-subscribe__comment">Email</span>
           <input
             class="input-field"
-            type="text"
-            name="modal-subscribe_email-field"
+            type="email"
+            name="user_mail"
             required
+            autocomplete="on"
             placeholder="Your email"
           />
         </label>
-
-        <button
-          class="button-subscribe"
-          type="submit"
-          data-modal-close-open-Subscribe
-        >
-          Subscribe
-        </button>
+        <!-- data-modal-close-open-Subscribe -->
+        <button class="button-subscribe" type="submit">Subscribe</button>
       </form>
     </div>
   </div>
