@@ -18,6 +18,10 @@ html {
     border-radius: 16px;
     z-index: 1;
 
+    @include media-desktop-min(1279.98px) {
+      right: 80px;
+    }
+
     &:hover {
       text-decoration: none;
       background: rgba(0, 0, 0, 0.5);
