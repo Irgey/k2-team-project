@@ -23,15 +23,19 @@
   pointer-events: none;
 }
 
+.backdrop.is-hidden .modal-contact-us {
+  opacity: 0;
+  transform: translate(-30%, -70%);
+}
+
 .modal-subscribe {
   width: 272px;
-  margin: 0 auto;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  transition: opacity 250ms, transform 250ms;
+  transition: opacity 2501ms, transform 500ms;
 
   background-color: $main-white;
   @media screen and (min-width: 768px) {
@@ -125,6 +129,9 @@
 
   border: 1px solid $border-color;
   border-radius: 4px;
+  &:not(:placeholder-shown):invalid {
+    border-color: #ff00008a;
+  }
   @media screen and (min-width: 768px) {
     width: 336px;
     height: 49px;
@@ -155,6 +162,8 @@
   right: 10px;
   width: 40px;
   height: 40px;
+  cursor: pointer;
+
   background-color: transparent;
   border: none;
   border-radius: 50%;
@@ -170,6 +179,7 @@
   padding: 10px 82px;
   margin-top: 18px;
   border: none;
+  cursor: pointer;
 
   font-weight: 600;
   font-size: 14px;
