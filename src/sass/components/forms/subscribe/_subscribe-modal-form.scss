@@ -34,7 +34,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 20;
   transition: opacity 2501ms, transform 500ms;
 
   background-color: $main-white;
