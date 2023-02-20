@@ -23,7 +23,7 @@
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal-contact-us {
+.backdrop.is-hidden .modal-subscribe {
   opacity: 0;
   transform: translate(-30%, -70%);
 }
@@ -35,7 +35,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 20;
-  transition: opacity 2501ms, transform 500ms;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
   background-color: $main-white;
   @media screen and (min-width: 768px) {
