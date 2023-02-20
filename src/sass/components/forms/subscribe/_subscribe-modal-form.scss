@@ -191,6 +191,7 @@
   border-color: transparent;
   border-radius: 8px;
   color: $main-white;
+  transition: background-color $anim-slow $anim-func;
   &:hover {
     background-color: $button-hovered-color;
   }
