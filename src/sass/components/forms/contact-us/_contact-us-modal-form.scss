@@ -135,6 +135,8 @@
   font-size: 14px;
 }
 .button-submit {
+  pointer-events: none;
+
   outline: 0;
   border: 0;
   margin: 0;
@@ -162,6 +164,7 @@
   ~ .modal-contact-us__form-input:not(:placeholder-shown)
   + .button-submit {
   background-color: $button-default-color;
+  pointer-events: all;
 }
 .modal-contact-us__form-input::placeholder {
   font-family: 'Montserrat';
