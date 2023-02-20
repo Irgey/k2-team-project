@@ -22,6 +22,8 @@
           placeholder="Your name"
           id="user_name"
           minlength="2"
+          required
+          pattern="^[a-zA-Z]+$"
         />
         <!-- </div> -->
         <label class="modal-contact-us__form-lable" for="user_mail"
@@ -34,7 +36,6 @@
           name="user_mail"
           placeholder="Your email"
           id="user_mail"
-          minlength="13"
         />
         <button
           type="button"
