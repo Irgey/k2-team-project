@@ -1,6 +1,6 @@
 <!--  Delivery section  -->
 
-<section class="#delivery section">
+<section id="delivery" class="section">
   <div class="container">
     <h2 class="title">DELIVERY</h2>
     <ul class="delivery__list">
@@ -32,15 +32,18 @@
     <!-- <div class="wallpaper"></div> -->
     <img
       class="delivery__img"
-      srcset="./images/delivery/image_delivery_mob@1x.jpg 320w
-      ./images/delivery/image_delivery_mob@2x.jpg 640w,
-      ./images/delivery/image_delivery_tab@1x.jpg 768w,
-      ./images/delivery/image_delivery_tab@2x.jpg 1536w,
-      ./images/delivery/image_delivery_desk@1x.jpg 1280w,
-      ./images/delivery/image_delivery_desk@2x.jpg 2560w"
+      srcset="
+        ./images/delivery/image_delivery_mob@1x.jpg   320w,
+        ./images/delivery/image_delivery_mob@2x.jpg   640w,
+        ./images/delivery/image_delivery_tab@1x.jpg   768w,
+        ./images/delivery/image_delivery_tab@2x.jpg  1536w,
+        ./images/delivery/image_delivery_desk@1x.jpg 1280w,
+        ./images/delivery/image_delivery_desk@2x.jpg 2560w
+      "
+      sizes="(min-width: 1279.98px) 1280px, (min-width: 767.98px) 768px, 320px"
       src="./images/delivery/image_delivery_mob@1x.jpg"
       alt="delivery photo"
-      sizes=""
+      loading="lazy"
     />
   </div>
 </section>

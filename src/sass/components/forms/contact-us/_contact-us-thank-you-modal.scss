@@ -4,14 +4,18 @@
   |============================
 */
 .modal-thank-you {
-  position: relative;
   width: 272px;
   margin: 0 auto;
   padding: 44px 16px 32px 16px;
   background-color: $main-white;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  background-color: #ffffff;
+  transition: opacity 250ms, transform 250ms;
   @media screen and (min-width: 768px) {
     width: 480px;
     padding: 54px 32px 54px 32px;

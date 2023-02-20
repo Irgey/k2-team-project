@@ -23,11 +23,37 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   var mySwiper = new Swiper('.swiper-container', {
-    spaceBetween: 1,
-    slidesPerView: 3,
+    // spaceBetween: 8,
+    // autoHeight: true,
+    slidesPerView: 1.5,
     centeredSlides: true,
     roundLengths: true,
     loop: true,
+    effect: 'creative',
+    creativeEffect: {
+      limitProgress: 10,
+      prev: {
+        scale: 0.9,
+        translate: ['-100%', 0, 0],
+      },
+      next: {
+        scale: 0.9,
+        translate: ['100%', 0, 0],
+      },
+    },
+
+    breakpoints: {
+      // mobile
+      320: {
+        slidesPerView: 1.5,
+      },
+      // tablet - desktop
+      1280: {
+        slidesPerView: 3,
+        scale: 1,
+      },
+    },
+
     loopAdditionalSlides: 30,
     navigation: {
       nextEl: '.swiper-button-next',

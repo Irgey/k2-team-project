@@ -15,13 +15,17 @@
   @include media-tablet-min(767.98px) {
     font-size: 44px;
     line-height: calc(54px / 44px);
+    margin-bottom: 60px;
     // margin-right: 16px;
+  }
+
+  @include media-desktop-min(1279.98px) {
+    margin-bottom: 80px;
   }
 
   &:after {
     content: '';
     flex-grow: 1;
-    height: 1px;
     border: 1px solid $main-black;
   }
 

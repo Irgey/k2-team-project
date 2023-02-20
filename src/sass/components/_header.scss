@@ -1,50 +1,45 @@
 // Header section
 
-//  Header Andrii
-
-// .headwrapper {
-//   display: flex;
-//   align-items: center;
-//   align-content: center;
-//   justify-content: space-between;
-//   padding-top: 16px;
-//   padding-right: 16px;
-//   padding-left: 16px;
-// }
-
-// .headersection {
-//   // padding-top: 16px;
-//   // padding-right: 16px;
-//   // padding-left: 16px;
-// }
-
-// .burger__menu {
-//   border: none;
-//   background: transparent;
-//   border: transparent;
-// }
-
-// .header-nav__link {
-//   margin-right: 14px;
-// }
-
-//  Others code
-
-.nav {
-  display: flex;
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
   padding-top: 16px;
+  padding-bottom: 16px;
+  transition: top 300ms;
+}
+
+#header.hide {
+  top: -120px;
+  background-color: white;
+}
+
+.header--no-transparency {
+  background-color: white;
+}
+
+.nav-mob {
+  display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  &__logo {
+    display: block;
+    width: 45px;
+    height: 35px;
+  }
+  &__icon {
+    fill: $main-black;
+  }
 }
 
-.nav__logo {
-  display: block;
-  width: 45px;
-  height: 35px;
-}
-
-.nav__icon {
-  fill: $main-black;
+.button-tel {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding-top: 2px;
+  width: 22px;
+  height: 22px;
 }
 
 .menu-toggle {
@@ -74,4 +69,75 @@
 
 .icon-cross {
   fill: $main-white;
+}
+
+@media screen and (max-width: 767.98px) {
+  .nav {
+    display: none;
+  }
+}
+
+// Tablet
+
+@media screen and (min-width: 768px) {
+  #header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  #header.hide {
+    transition: 300ms;
+  }
+  .header--no-transparency {
+    background-color: white;
+  }
+  .mob-menu-wrapper {
+    display: none;
+  }
+
+  .nav-mob {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    &__link {
+      color: $main-font-color;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-size: 20px;
+      line-height: calc(24 / 20);
+      text-decoration: none;
+    }
+  }
+}
+
+// Desktop
+@media screen and (min-width: 1280px) {
+  #header {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+  #header.hide {
+    background-color: white;
+  }
+  .header--no-transparency {
+    background-color: white;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+      gap: 48px;
+    }
+  }
 }
