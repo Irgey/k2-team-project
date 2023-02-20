@@ -11,8 +11,9 @@
     padding-top: 38px;
   }
   @include media-desktop-min(1279.98px) {
-    padding-top: 59px;
-    padding-bottom: 105px;
+    padding-top: 149px;
+    padding-bottom: 193px;
+
   }
 
   .hero__box {
@@ -43,18 +44,16 @@
   @include media-desktop-min(1279.98px) {
     font-size: 160px;
     line-height: calc(195 / 160);
-    bottom: -93px;
-  }
+    bottom: -98px;
+    &-element {position: absolute;
+      width: 58px;
+      height: 0px;
+      right: 20px;
+      top: 16px;
+      border: 4.5px solid #0E0E0E;}
+      }
 }
-.hero__title-element::before {
-  position: absolute;
-  width: 58px;
-  height: 0px;
-  right: 0;
-  top: 0;
 
-  border: 8px solid #0e0e0e;
-}
 .hero__text {
   font-weight: 400;
   font-size: 14px;
@@ -74,7 +73,7 @@
     line-height: calc(39 / 32);
     text-shadow: none;
     margin-right: 110px;
-    margin-left: 110px;
+    margin-left: 90px;
   }
 }
 .hero__wrapper {
