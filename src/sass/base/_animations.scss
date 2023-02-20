@@ -16,6 +16,7 @@ html {
     padding: 8px 16px;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 16px;
+    z-index: 1;
 
     &:hover {
       text-decoration: none;
