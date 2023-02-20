@@ -132,6 +132,7 @@
   border-radius: 4px;
   &:not(:placeholder-shown):invalid {
     border-color: #ff00008a;
+    transition: border-color 500ms;
   }
   @media screen and (min-width: 768px) {
     width: 336px;
