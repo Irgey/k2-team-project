@@ -45,15 +45,17 @@
     font-size: 160px;
     line-height: calc(195 / 160);
     bottom: -98px;
-    &:before {position: absolute;
-      width: 58px;
-      height: 8px;
-      display: block;
+    &::before {
+      content: '';
+      position: absolute;
       right: 20px;
       top: 16px;
-      color: black;
-      // border: 4.5px solid #0E0E0E;}
-      }
+
+      display: block;
+      width: 58px;
+      height: 8px;
+      background-color: #0e0e0e;
+    }
 }}
 
 .hero__text {
