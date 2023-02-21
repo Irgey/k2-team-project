@@ -1,0 +1,59 @@
+<!--  Hero section  -->
+<section id="anemone" class="hero">
+  <div class="container hero__box">
+    <h1 class="hero__title">
+      ANEMONE<span class="hero__title-element"></span>
+    </h1>
+    <h2 class="hero__text">
+      flower <br />
+      studio
+    </h2>
+    <div class="hero__wrapper">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/hero/hero_desk@1x.jpg 1x,
+            ./images/hero/hero_desk@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/hero/hero_tab@1x.jpg 1x,
+            ./images/hero/hero_tab@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/hero/hero_mob@1x.jpg 1x,
+            ./images/hero/hero_mob@2x.jpg 2x
+          "
+          type="image/jpg"
+        />
+        <img
+          class="hero_image"
+          src="./images/hero/hero_desk@1x.jpg"
+          alt="flover"
+          width="390"
+          height="636"
+        />
+      </picture>
+    </div>
+
+    <button class="hero__button" type="button" data-modal-open-Flower>
+      <svg class="hero__icon" width="64" height="76">
+        <use class="hero__icon-text" href="./images/sprite.svg#icon-text"></use>
+        <use
+          class="hero__icon-arrow"
+          href="./images/sprite.svg#icon-arrow"
+        ></use>
+      </svg>
+    </button>
+  </div>
+</section>
