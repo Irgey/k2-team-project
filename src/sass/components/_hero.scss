@@ -20,14 +20,13 @@
     padding-top: 149px;
     padding-bottom: 193px;
 
-
     &::before {
       content: '';
       position: absolute;
       top: 0;
       left: 50%;
-     
-      transform: translateX( -50%);
+
+      transform: translateX(-50%);
 
       width: 100%;
       height: 100%;
@@ -93,14 +92,16 @@
       height: 8px;
       background-color: currentColor;
     }
-    
+
     transition: 800ms ease-in;
   }
 }
 
 .hero:hover .hero__title {
-  transform: translateY(-355px);
-  color: #fff;
+  @media screen and (min-width: 1280px) {
+    transform: translateY(-355px);
+    color: #fff;
+  }
 }
 .hero__text {
   font-weight: 400;
@@ -128,8 +129,11 @@
   }
 }
 .hero:hover .hero__text {
-  transform: translateY(175px);
-  color: #fff;}
+  @media screen and (min-width: 1280px) {
+    transform: translateY(175px);
+    color: #fff;
+  }
+}
 
 .hero__wrapper {
   width: 145px;
@@ -176,8 +180,11 @@
   }
 }
 .hero:hover .hero__button {
-  transform: translateY(175px);
-  fill: #fff;}
+  @media screen and (min-width: 1280px) {
+    transform: translateY(175px);
+    fill: #fff;
+  }
+}
 
 .hero__icon {
   width: 100%;
