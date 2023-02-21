@@ -11,7 +11,6 @@
 
   @include media-tablet-min(767.98px) {
     padding: 60px 16px 60px 24px;
-    
   }
 
   @include media-desktop-min(1279.98px) {
@@ -22,14 +21,13 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-   
+
     @include media-tablet-min(767.98px) {
       gap: 44px;
     }
-    @include media-desktop-min(1279.98px) {      
-      gap: 96px;      
+    @include media-desktop-min(1279.98px) {
+      gap: 96px;
     }
-   
   }
 
   &__bottom-container {
@@ -37,7 +35,7 @@
     align-items: flex-start;
     justify-content: space-between;
 
-    @media (min-width: 768px) {      
+    @media (min-width: 768px) {
       gap: 64px;
     }
     @include media-tablet-min(767.98px) {
@@ -50,44 +48,44 @@
 }
 
 .container__footer {
-  margin: 0 auto; 
+  margin: 0 auto;
   @media screen and (max-width: 767.98px) {
-    width: 100%;    
+    width: 100%;
   }
 
   @include media-tablet-min(767.98px) {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;    
-    width: 100%;    
+    justify-content: space-between;
+    width: 100%;
   }
 
   @include media-tablet-min(767.98px) {
-    flex-basis: calc((100% - 24px) / 2);      
+    flex-basis: calc((100% - 24px) / 2);
   }
 
   @media screen and (min-width: 1280px) {
     display: flex;
     align-items: start;
     width: 100%;
-    justify-content: space-between;    
+    justify-content: space-between;
   }
-} 
+}
 
 .top-bottom {
   @include media-tablet-min(767.98px) {
     display: flex;
-  align-items: start;
-  justify-content: space-between;
-  gap: 44px;
+    align-items: start;
+    justify-content: space-between;
+    gap: 44px;
   }
 
   @include media-desktop-min(1279.98px) {
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  gap: 96px;
-}
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 96px;
+  }
 }
 
 .footer--title {
@@ -117,7 +115,6 @@
   @include media-desktop-min(1279.98px) {
     display: block;
     margin-right: 210px;
-    
   }
 }
 
@@ -127,9 +124,8 @@
 
 .container--basic {
   @include media-tablet-max(767.98px) {
-    flex-basis: calc((100% - 16px) / 2);      
+    flex-basis: calc((100% - 16px) / 2);
   }
-    
 }
 
 .navigation {
@@ -200,11 +196,7 @@
 .footer-socials {
   gap: 18px;
   display: flex;
-
-//   @include media-tablet-min(767.98px) {
-//     flex-direction: column;
-//   }
-// }
+}
 .socials__list {
   display: flex;
   gap: 14px;
