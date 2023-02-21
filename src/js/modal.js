@@ -11,8 +11,18 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
   refs.closeOpenModalBtn.addEventListener('click', toggleModal);
 
-  function toggleModal() {
+  function toggleModal(event) {
+    event.preventDefault();
+    const isMenuOpen =
+      refs.openModalBtn.getAttribute('aria-expanded') === 'true' || false;
+    refs.openModalBtn.setAttribute('aria-expanded', !isMenuOpen);
+
     refs.modal.classList.toggle('is-hidden');
     refs.modal.classList.toggle('is-show');
+
+    const scrollLockMethod = !isMenuOpen
+      ? 'disableBodyScroll'
+      : 'enableBodyScroll';
+    bodyScrollLock[scrollLockMethod](document.body);
   }
 })();

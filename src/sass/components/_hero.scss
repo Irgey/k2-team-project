@@ -1,8 +1,8 @@
 /**
-  |============================
-  |  Hero section
-  |============================
-*/
+    |============================
+    |  Hero section
+    |============================
+  */
 .hero {
   background-color: $main-white;
   padding-top: 44px;
@@ -44,13 +44,17 @@
     font-size: 160px;
     line-height: calc(195 / 160);
     bottom: -98px;
-    &-element {
+
+    &::before {
+      content: '';
       position: absolute;
-      width: 58px;
-      height: 0px;
       right: 20px;
       top: 16px;
-      border: 4.5px solid #0e0e0e;
+
+      display: block;
+      width: 58px;
+      height: 8px;
+      background-color: #0e0e0e;
     }
   }
 }
