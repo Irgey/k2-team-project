@@ -5,10 +5,11 @@
 */
 .hero {
   background-color: $main-white;
-  padding-top: 44px;
+  padding-top: 95px;
   padding-bottom: 100px;
   @include media-tablet-min(767.98px) {
-    padding-top: 38px;
+    padding-top: 119px;
+    padding-bottom: 194px;
   }
   @include media-desktop-min(1279.98px) {
     padding-top: 149px;
@@ -39,20 +40,21 @@
   @include media-tablet-min(767.98px) {
     font-size: 120px;
     line-height: calc(146 / 120);
-    bottom: -94px;
   }
   @include media-desktop-min(1279.98px) {
     font-size: 160px;
     line-height: calc(195 / 160);
     bottom: -98px;
-    &-element {position: absolute;
+    &:before {position: absolute;
       width: 58px;
-      height: 0px;
+      height: 8px;
+      display: block;
       right: 20px;
       top: 16px;
-      border: 4.5px solid #0E0E0E;}
+      color: black;
+      // border: 4.5px solid #0E0E0E;}
       }
-}
+}}
 
 .hero__text {
   font-weight: 400;
