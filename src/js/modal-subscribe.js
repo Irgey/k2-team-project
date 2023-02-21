@@ -21,5 +21,14 @@
   function toggleModalSubscribe() {
     refs.modalSubscribe.classList.toggle('is-hidden');
     refs.modalSubscribe.classList.toggle('is-show');
+
+    const isMenuOpen =
+      refs.modalSubscribe.getAttribute('aria-expanded') === 'true' || false;
+    refs.modalSubscribe.setAttribute('aria-expanded', !isMenuOpen);
+
+    const scrollLockMethod = !isMenuOpen
+      ? 'disableBodyScroll'
+      : 'enableBodyScroll';
+    bodyScrollLock[scrollLockMethod](document.body);
   }
 })();
