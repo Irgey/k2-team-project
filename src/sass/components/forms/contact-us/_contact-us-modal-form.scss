@@ -97,20 +97,29 @@
 
 .modal-contact-us__form-lable {
   display: block;
-  font-size: 10px;
+  font-size: 12px;
   margin-bottom: 8px;
   @media screen and (min-width: 768px) {
     font-size: 14px;
   }
 }
+.first .modal-contact-us__form-input {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: calc(17 / 14);
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+}
 
 .modal-contact-us__form-input {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.4);
   outline: 0;
   margin-bottom: 14px;
   display: block;
   width: 100%;
-  height: 40px;
+  height: 35px;
   padding: 10px 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -119,6 +128,7 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 24px;
     padding: 16px;
+    height: 49px;
   }
   &:not(:placeholder-shown):invalid {
     border-color: red;
