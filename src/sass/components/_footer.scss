@@ -9,11 +9,11 @@
   margin: 0 auto;
   padding: 32px 16px;
 
-  @include media-tablet-min(767.98px) {
+  @include media-tablet-min(768px) {
     padding: 60px 16px 60px 24px;
   }
 
-  @include media-desktop-min(1279.98px) {
+  @include media-desktop-min(1280px) {
     padding: 72px 48px 72px 24px;
   }
 
@@ -22,10 +22,10 @@
     align-items: flex-start;
     justify-content: space-between;
 
-    @include media-tablet-min(767.98px) {
+    @include media-tablet-min(768px) {
       gap: 44px;
     }
-    @include media-desktop-min(1279.98px) {
+    @include media-desktop-min(1280px) {
       gap: 96px;
     }
   }
@@ -38,10 +38,10 @@
     @media (min-width: 768px) {
       gap: 64px;
     }
-    @include media-tablet-min(767.98px) {
+    @include media-tablet-min(768px) {
       gap: 44px;
     }
-    @include media-desktop-min(1279.98px) {
+    @include media-desktop-min(1280px) {
       gap: 150px;
     }
   }
@@ -53,14 +53,14 @@
     width: 100%;
   }
 
-  @include media-tablet-min(767.98px) {
+  @include media-tablet-min(768px) {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
   }
 
-  @include media-tablet-min(767.98px) {
+  @include media-tablet-min(768px) {
     flex-basis: calc((100% - 24px) / 2);
   }
 
@@ -95,7 +95,7 @@
   font-weight: 700;
   line-height: calc(22 / 18);
   color: #ffffff;
-  @include media-tablet-min(767.98px) {
+  @include media-tablet-min(768px) {
     font-size: 20px;
     line-height: calc(24 / 20);
   }
@@ -106,7 +106,7 @@
   font-weight: 500;
   line-height: calc(17 / 14);
   color: #ffffff;
-  @include media-tablet-min(767.98px) {
+  @include media-tablet-min(768x) {
     font-size: 16px;
     line-height: calc(19 / 16);
   }
