@@ -1,12 +1,24 @@
-// .blog {
-//   overflow: hidden;
-// }
+.blog {
+  overflow: hidden;
+
+  @include media-desktop-min(1280px) {
+    overflow: inherit;
+  }
+}
+
+.swiper {
+  overflow: inherit;
+
+  @include media-desktop-min(1280px) {
+    overflow: hidden;
+  }
+}
 
 .swiper-container {
   position: relative;
   width: 100%;
   // height: 300px;
-  overflow: hidden;
+  // overflow: hidden;
 }
 .swiper-container > .swiper-slide__content {
   position: absolute;
@@ -100,6 +112,11 @@
     fill: $main-black;
     // top: 330px;
   }
+}
+
+.slider_btn {
+  width: 100%;
+  height: 100%;
 }
 
 .newsletter {
