@@ -1,0 +1,109 @@
+.footer {
+  background-color: $main-black;
+  font-family: Inter, sans-serif;
+}
+.footer-container {
+  padding: 32px 16px;
+  max-width: 480px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    max-width: 768px;
+    padding: 60px 40px 54px 24px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    padding: 72px 48px 72px 24px;
+  }
+}
+.step-away-dwa {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.top-container {
+  display: flex;
+  @media screen and (min-width: 768px) {
+    margin-right: 44px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 96px;
+  }
+}
+.bottom-container {
+  display: flex;
+}
+.logo__footer {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
+    margin-right: 210px;
+    fill: $main-white;
+  }
+}
+.nav-footer {
+  margin-right: auto;
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 82px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 96px;
+  }
+}
+.contacts {
+  margin-right: auto;
+  @media screen and (max-width: 767.98px) {
+    width: 128px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 64px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 208px;
+  }
+}
+.title-footer {
+  color: $main-white;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  margin-bottom: 18px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
+}
+.text-footer {
+  font-weight: 500;
+  color: $main-white;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+  }
+}
+.nav-footer__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.contacts__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.socials {
+  @media screen and (max-width: 767.98px) {
+    width: 128px;
+  }
+}
+.socials__list {
+  display: flex;
+  gap: 14px;
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    gap: 18px;
+  }
+}
