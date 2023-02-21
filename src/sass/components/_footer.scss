@@ -9,21 +9,21 @@
   margin: 0 auto;
   padding: 32px 16px;
 
-  @include media-tablet-min(767.98px) {
+  @include media-tablet-min(768px) {
     padding: 60px 40px 60px 24px;
   }
 
-  @include media-desktop-min(1279.98px) {
+  @include media-desktop-min(1280px) {
     padding: 72px 48px 72px 24px;
   }
 
   &__top-container {
     display: flex;
     column-gap: 20px;
-    @include media-tablet-min(767.98px) {
+    @include media-tablet-min(768px) {
       gap: 44px;
     }
-    @include media-desktop-min(1279.98px) {
+    @include media-desktop-min(1280px) {
       gap: 80px;
       margin-right: auto;
     }
@@ -36,7 +36,7 @@
     @media (min-width: 768px) {
       gap: 64px;
     }
-    @include media-tablet-min(767.98px) {
+    @include media-tablet-min(768px) {
       gap: 208px;
     }
   }
@@ -45,11 +45,11 @@
 .container__footer {
   margin: 0 auto;
 
-  @media screen and (max-width: 767.98px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
 
-  @include media-tablet-min(767.98px) {
+  @include media-tablet-min(768px) {
     display: flex;
     justify-content: space-between;
     gap: 44px;
@@ -71,7 +71,7 @@
   font-weight: 700;
   line-height: calc(22 / 18);
   color: #ffffff;
-  @include media-tablet-min(767.98px) {
+  @include media-tablet-min(768px) {
     font-size: 20px;
     line-height: calc(24 / 20);
   }
@@ -82,7 +82,7 @@
   font-weight: 500;
   line-height: calc(17 / 14);
   color: #ffffff;
-  @include media-tablet-min(767.98px) {
+  @include media-tablet-min(768px) {
     font-size: 16px;
     line-height: calc(19 / 16);
   }
@@ -91,7 +91,7 @@
 .logo {
   display: none;
 
-  @include media-desktop-min(1279.98px) {
+  @include media-desktop-min(1280px) {
     display: block;
     margin-right: 210px;
   }
@@ -118,7 +118,7 @@
 
 .navigation__item:last-child {
   margin-bottom: 32px;
-  @include media-tablet-min(767.98px) {
+  @include media-tablet-min(768px) {
     margin-bottom: 0;
   }
 }
@@ -172,7 +172,7 @@
   gap: 24px;
   display: flex;
 
-  @include media-tablet-min(767.98px) {
+  @include media-tablet-min(768px) {
     flex-direction: column;
   }
 }

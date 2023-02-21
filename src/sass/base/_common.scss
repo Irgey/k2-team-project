@@ -12,14 +12,14 @@
   align-items: center;
   gap: 14px;
   margin-bottom: 32px;
-  @include media-tablet-min(767.98px) {
+  @include media-tablet-min(768px) {
     font-size: 44px;
     line-height: calc(54px / 44px);
     margin-bottom: 60px;
     // margin-right: 16px;
   }
 
-  @include media-desktop-min(1279.98px) {
+  @include media-desktop-min(1280px) {
     margin-bottom: 80px;
   }
 
@@ -29,7 +29,7 @@
     border: 1px solid $main-black;
   }
 
-  @include media-tablet-min(1279.98px) {
+  @include media-tablet-min(1280px) {
     margin-bottom: 80px;
   }
 }
@@ -39,13 +39,13 @@
   color: $main-black;
   text-align: center;
   margin-bottom: 6px;
-  @include media-tablet-min(767.98px) {
+  @include media-tablet-min(768px) {
     font-size: 32px;
     line-height: calc(39px / 32px);
     margin-right: 8px;
     margin-bottom: 8px;
   }
-  @include media-desktop-min(1279.98px) {
+  @include media-desktop-min(1280px) {
     font-size: 36px;
     line-height: calc(44px / 36px);
     margin-right: 16px;
