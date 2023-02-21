@@ -1,16 +1,13 @@
 <!--  Footer section  -->
 
 <footer class="footer">
-  <div class="container__footer container">
     <a href="#anemone">
-      <div class="footer__logo">
         <svg class="logo__footer" width="74" height="58">
           <use
             class="logo__footer__icon"
             href="./images/sprite.svg#icon-logodesktop"
           ></use>
         </svg>
-      </div>
     </a>
 
     <div class="top-bottom">
@@ -40,8 +37,8 @@
           </ul>
         </div>
 
-        <div class="open-time__title container--basic">
-          <h2 class="open-time__title__title footer--title">Opening times</h2>
+        <div class="open-time-wrapper container--basic">
+          <h2 class="open-time__title footer--title">Opening times</h2>
           <p class="basic--text">
             Every day
             <span class="nowrap"><time>9:00</time> - <time>22:00</time></span>
@@ -55,24 +52,22 @@
         <div class="contacts container--basic">
           <h2 class="contacts__title footer--title">Contacts</h2>
           <ul class="contacts__list">
-            <li class="contacts__tel">
+            <li class="contacts__item">
               <a class="contacts__tel basic--text" href="tel:+380631234567"
                 >+38 063 123 45 67</a
               >
             </li>
-            <li class="contacts__mail">
+            <li class="contacts__item">
               <a
-                class="contacts__mail basic--text"
+                class="contacts__link basic--text"
                 href="mailto:anemonestudio@example.com"
-                >anemonestudio<span class="contacts__mail--replace"
-                  >@example.com</span
-                ></a
+                >anemonestudio<br>@example.com</a
               >
             </li>
-            <li class="contacts__addr">
-              <a class="contacts__addr basic--text nowrap" href="#"
-                >Reitarska Street, 11
-                <span class="contacts__addr--replace"> Kyiv, Ukraine</span></a
+            <li class="contacts__item">
+              <a class="contacts__link basic--text" href="#"
+                >Reitarska Street, 11<br>
+                Kyiv, Ukraine</a
               >
             </li>
           </ul>
@@ -100,5 +95,4 @@
         </div>
       </div>
     </div>
-  </div>
 </footer>
