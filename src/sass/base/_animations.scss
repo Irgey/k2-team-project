@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@include media-tablet-min(767.98px) {
+@include media-tablet-min(768px) {
   .top {
     position: fixed;
     bottom: 40px;
@@ -18,7 +18,7 @@ html {
     border-radius: 16px;
     z-index: 1;
 
-    @include media-desktop-min(1279.98px) {
+    @include media-desktop-min(1280px) {
       right: 80px;
     }
 

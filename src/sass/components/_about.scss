@@ -12,7 +12,7 @@
   }
 }
 
-@include media-tablet-min(767.98px) {
+@include media-tablet-min(768px) {
   .subtitle {
     display: flex;
     font-size: 20px;
@@ -22,7 +22,7 @@
     text-align: left;
     margin-right: 54px;
 
-    @include media-desktop-min(1279.98px) {
+    @include media-desktop-min(1280px) {
       font-size: 22px;
       line-height: calc(27 / 22);
       margin-right: 90px;
@@ -41,11 +41,11 @@
 .userpic {
   border-radius: 0px 639.5px 639.5px 0px;
 
-  @include media-tablet-min(767.98px) {
+  @include media-tablet-min(768px) {
     min-width: 344px;
   }
 
-  @include media-desktop-min(1279.98px) {
+  @include media-desktop-min(1280px) {
     min-width: 632px;
   }
 }

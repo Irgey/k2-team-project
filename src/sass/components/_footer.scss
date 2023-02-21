@@ -9,24 +9,23 @@
   margin: 0 auto;
   padding: 32px 16px;
 
-  @include media-tablet-min(767.98px) {
-    padding: 60px 16px 60px 24px;
+  @include media-tablet-min(768px) {
+    padding: 60px 40px 60px 24px;
   }
 
-  @include media-desktop-min(1279.98px) {
+  @include media-desktop-min(1280px) {
     padding: 72px 48px 72px 24px;
   }
 
   &__top-container {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-
-    @include media-tablet-min(767.98px) {
+    column-gap: 20px;
+    @include media-tablet-min(768px) {
       gap: 44px;
     }
-    @include media-desktop-min(1279.98px) {
-      gap: 96px;
+    @include media-desktop-min(1280px) {
+      gap: 80px;
+      margin-right: auto;
     }
   }
 
@@ -38,22 +37,20 @@
     @media (min-width: 768px) {
       gap: 64px;
     }
-    @include media-tablet-min(767.98px) {
-      gap: 44px;
-    }
-    @include media-desktop-min(1279.98px) {
-      gap: 150px;
+    @include media-tablet-min(768px) {
+      gap: 208px;
     }
   }
 }
 
 .container__footer {
   margin: 0 auto;
-  @media screen and (max-width: 767.98px) {
+
+  @media screen and (max-width: 768px) {
     width: 100%;
   }
 
-  @include media-tablet-min(767.98px) {
+  @include media-tablet-min(768px) {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -93,7 +90,7 @@
   font-weight: 700;
   line-height: calc(22 / 18);
   color: #ffffff;
-  @include media-tablet-min(767.98px) {
+  @include media-tablet-min(768px) {
     font-size: 20px;
     line-height: calc(24 / 20);
   }
@@ -104,7 +101,7 @@
   font-weight: 500;
   line-height: calc(17 / 14);
   color: #ffffff;
-  @include media-tablet-min(767.98px) {
+  @include media-tablet-min(768px) {
     font-size: 16px;
     line-height: calc(19 / 16);
   }
@@ -112,7 +109,8 @@
 
 .footer-logo {
   display: none;
-  @include media-desktop-min(1279.98px) {
+
+  @include media-desktop-min(1280px) {
     display: block;
     margin-right: 210px;
   }
@@ -143,7 +141,7 @@
 
 .navigation__item:last-child {
   margin-bottom: 32px;
-  @include media-tablet-min(767.98px) {
+  @include media-tablet-min(768px) {
     margin-bottom: 0;
   }
 }
@@ -191,16 +189,12 @@
 .nowrap {
   white-space: nowrap;
   display: block;
-}
 
-.footer-socials {
-  gap: 18px;
-  display: flex;
-}
-.socials__list {
-  display: flex;
-  gap: 14px;
-  @media screen and (min-width: 768px) {
+  // .footer-socials {
+  //   gap: 24px;
+  //   display: flex;
+
+  @include media-tablet-min(768px) {
     flex-direction: column;
     gap: 18px;
   }
