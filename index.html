@@ -21,7 +21,7 @@
     <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@4.0.0-beta.0/lib/bodyScrollLock.min.js"></script>
     
     <script type="module" crossorigin src="/k2-team-project/assets/index-fe45b631.js"></script>
-    <link rel="stylesheet" href="/k2-team-project/assets/index-1ceb28f0.css">
+    <link rel="stylesheet" href="/k2-team-project/assets/index-6864c977.css">
   </head>
   <body>
     <header id="header" class="header header--no-transparency" data-header>
@@ -487,7 +487,7 @@
           id="user_name"
           minlength="2"
           required
-          title="Username must be two words separated by space."
+          pattern="^[a-zA-Z]+$"
         />
         <!-- </div> -->
         <label class="modal-contact-us__form-lable" for="user_mail"
@@ -501,6 +501,7 @@
           autocomplete="on"
           placeholder="Your email"
           id="user_mail"
+          required
         />
         <button
           type="submit"
