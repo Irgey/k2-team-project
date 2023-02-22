@@ -14,13 +14,10 @@
 
 @include media-tablet-min(768px) {
   .subtitle {
-    display: flex;
     font-size: 20px;
     line-height: calc(24 / 20);
-    align-items: center;
-    justify-content: center;
-    text-align: left;
     margin-right: 54px;
+    margin-top: 0;
 
     @include media-desktop-min(1280px) {
       font-size: 22px;
@@ -31,6 +28,7 @@
 
   .wrapper {
     display: flex;
+    align-items: center;
   }
   //  Returning force br to the subtext
   // .break-your__text {
