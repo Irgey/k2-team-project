@@ -23,7 +23,7 @@
           id="user_name"
           minlength="2"
           required
-          title="Username must be two words separated by space."
+          pattern="^[a-zA-Z]+$"
         />
         <!-- </div> -->
         <label class="modal-contact-us__form-lable" for="user_mail"
@@ -37,6 +37,7 @@
           autocomplete="on"
           placeholder="Your email"
           id="user_mail"
+          required
         />
         <button
           type="submit"
