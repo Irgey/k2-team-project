@@ -34,7 +34,11 @@ html {
       &:hover,
       &:focus {
         text-decoration: none;
-        animation: wiggle 2s linear infinite;
+        // animation: float 6s ease-in;
+        animation: wiggle 2s ease-in infinite;
+        // animation: bounce-out-top 5s ease-in;
+        // animation: 4s linear 0s infinite alternate rise,
+        //   4s linear 0s infinite alternate bounce;
         // animation: slide-out-bck-top 3s ease-in;
       }
     }
