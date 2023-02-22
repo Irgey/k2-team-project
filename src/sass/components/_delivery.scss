@@ -18,17 +18,16 @@
 .delivery__item {
   display: flex;
   align-items: center;
-  margin-bottom: 14px;
-
-  @include media-tablet-min(768px) {
-    margin-bottom: 20px;
-  }
-
-  @include media-desktop-min(1280px) {
-    margin-bottom: 32px;
+  &:not(:last-child) {
+    margin-bottom: 14px;
+    @include media-tablet-min(768px) {
+      margin-bottom: 20px;
+    }
+    @include media-desktop-min(1280px) {
+      margin-bottom: 32px;
+    }
   }
 }
-
 .delivery-item__text {
   font-family: inherit;
   font-style: normal;

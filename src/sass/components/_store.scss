@@ -6,6 +6,9 @@
     gap: 40px 32px;
     margin-bottom: 60px;
   }
+  @media screen and (min-width: 1280px) {
+    gap: 64px 32px;
+  }
   list-style: none;
   margin-bottom: 32px;
 }

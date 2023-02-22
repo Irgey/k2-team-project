@@ -37,7 +37,7 @@
   font-size: 16px;
   line-height: calc(20px / 16px);
   color: $main-black;
-  text-align: center;
+  text-align: left;
   margin-bottom: 6px;
   @include media-tablet-min(768px) {
     font-size: 32px;
