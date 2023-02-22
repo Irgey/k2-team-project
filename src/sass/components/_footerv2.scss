@@ -107,3 +107,18 @@
     gap: 18px;
   }
 }
+.nav-footer__link,
+.contacts__link {
+  transition: color $anim-slow $anim-func;
+  &:hover,
+  &:focus {
+    color: $button-default-color;
+  }
+}
+.socials__link:hover .socials__icon,
+.socials__link:focus .socials__icon {
+  fill: $button-default-color;
+}
+.socials__icon {
+  fill: $button-default-color;
+}
