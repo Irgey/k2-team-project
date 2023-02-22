@@ -1,6 +1,6 @@
 import './js/modal';
 import './js/header-fixed';
-import './js/mobile-menu';
+import './js/close-mob-menu';
 import './js/header-color';
 import './js/header-change-color';
 import './js/slider';

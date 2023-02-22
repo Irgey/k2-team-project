@@ -131,7 +131,7 @@
     height: 49px;
   }
   &:not(:placeholder-shown):invalid {
-    border-color: red;
+    border-color: #ff00008a;
   }
   &:not(:placeholder-shown):valid
     ~ &:not(:placeholder-shown):valid
