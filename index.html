@@ -21,7 +21,7 @@
     <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@4.0.0-beta.0/lib/bodyScrollLock.min.js"></script>
     
     <script type="module" crossorigin src="/k2-team-project/assets/index-fe45b631.js"></script>
-    <link rel="stylesheet" href="/k2-team-project/assets/index-5a6526cd.css">
+    <link rel="stylesheet" href="/k2-team-project/assets/index-db261129.css">
   </head>
   <body>
     <header id="header" class="header header--no-transparency" data-header>
@@ -31,7 +31,7 @@
     <nav class="nav-mob">
       <a class="nav-mob__logo logo-mob" href="#top">
         <svg class="nav-mob__icon" width="45" height="35">
-          <use href="/k2-team-project/assets/sprite-4ddf5d33.svg#icon-mob-logo"></use>
+          <use href="/k2-team-project/assets/sprite-c240c557.svg#icon-mob-logo"></use>
         </svg>
       </a>
 
@@ -42,7 +42,7 @@
           href="tel:+380631234567"
         >
           <svg class="nav-mob__icon-tel" width="22" height="22">
-            <use href="/k2-team-project/assets/sprite-4ddf5d33.svg#icon-header-tel"></use>
+            <use href="/k2-team-project/assets/sprite-c240c557.svg#icon-header-tel"></use>
           </svg>
         </a>
         <button
@@ -52,7 +52,7 @@
           aria-controls="mobile-menu"
         >
           <svg class="" width="24" height="24">
-            <use class="icon-open" href="/k2-team-project/assets/sprite-4ddf5d33.svg#icon-burger"></use>
+            <use class="icon-open" href="/k2-team-project/assets/sprite-c240c557.svg#icon-burger"></use>
           </svg>
         </button>
       </div>
@@ -61,7 +61,7 @@
     <nav class="nav">
       <a class="nav__logo" href="#top">
         <svg class="nav__icon" width="72" height="57">
-          <use href="/k2-team-project/assets/sprite-4ddf5d33.svg#icon-logodesktop"></use>
+          <use href="/k2-team-project/assets/sprite-c240c557.svg#icon-logodesktop"></use>
         </svg>
       </a>
       <ul class="nav__list">
@@ -83,7 +83,7 @@
       </ul>
       <a class="button-tel" id="button-tel" href="tel:+380631234567">
         <svg class="nav-mob__icon-tel" width="22" height="22">
-          <use href="/k2-team-project/assets/sprite-4ddf5d33.svg#icon-header-tel"></use>
+          <use href="/k2-team-project/assets/sprite-c240c557.svg#icon-header-tel"></use>
         </svg>
       </a>
     </nav>
@@ -130,10 +130,10 @@
 
     <button class="hero__button" type="button" data-modal-open-Flower>
       <svg class="hero__icon" width="64" height="76">
-        <use class="hero__icon-text" href="/k2-team-project/assets/sprite-4ddf5d33.svg#icon-text"></use>
+        <use class="hero__icon-text" href="/k2-team-project/assets/sprite-c240c557.svg#icon-text"></use>
         <use
           class="hero__icon-arrow"
-          href="/k2-team-project/assets/sprite-4ddf5d33.svg#icon-arrow"
+          href="/k2-team-project/assets/sprite-c240c557.svg#icon-arrow"
         ></use>
       </svg>
     </button>
@@ -172,46 +172,125 @@
     <h2 class="title">STORE</h2>
     <ul class="store__list">
       <li class="store__item">
-        <img
-          srcset="/k2-team-project/assets/bouquet3_mob@1x-4d302f3c.jpg 136w, /k2-team-project/assets/bouquet3_mob@2x-b8da171c.jpg 272w, /k2-team-project/assets/bouquet3_tab@1x-10038a77.jpg 344w, /k2-team-project/assets/bouquet3_tab@2x-a2011306.jpg 688w, /k2-team-project/assets/bouquet3_desk@1x-6d04a2cd.jpg 600w, /k2-team-project/assets/bouquet3_desk@2x-c1f3c65d.jpg 1200w"
-          sizes="(min-width: 1280px) 600px, (min-width: 768px) 344px, 50vw"
-          src="/k2-team-project/assets/bouquet3_mob@1x-4d302f3c.jpg"
-          alt="red flowers"
-          loading="lazy"
-        />
+        <picture>
+          <!-- Desktop screen -->
+          <source
+            media="(min-width: 1280px)"
+            srcset="/k2-team-project/assets/bouquet3_desk@1x-6d04a2cd.jpg 1x, /k2-team-project/assets/bouquet3_desk@2x-c1f3c65d.jpg 2x"
+            type="image/jpg"
+          />
+          <!-- Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="/k2-team-project/assets/bouquet3_tab@1x-10038a77.jpg 1x, /k2-team-project/assets/bouquet3_tab@2x-a2011306.jpg 2x"
+            type="image/jpg"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="/k2-team-project/assets/bouquet3_mob@1x-4d302f3c.jpg 1x, /k2-team-project/assets/bouquet3_mob@2x-b8da171c.jpg 2x"
+            type="image/jpg"
+          />
+          <img
+            class="store__image"
+            src="/k2-team-project/assets/bouquet3_mob@1x-4d302f3c.jpg"
+            alt="red flowers"
+            loading="lazy"
+          />
+        </picture>
+
         <h3 class="store__member">compliments</h3>
         <p class="store__text">from $15</p>
       </li>
       <li class="store__item">
-        <img
-          srcset="/k2-team-project/assets/bouquet1_mob@1x-12b4e642.jpg 136w, /k2-team-project/assets/bouquet1_mob@2x-3b153f44.jpg 272w, /k2-team-project/assets/bouquet1_tab@1x-50a0032b.jpg 344w, /k2-team-project/assets/bouquet1_tab@2x-928c460c.jpg 688w, /k2-team-project/assets/bouquet1_desk@1x-b046e670.jpg 600w, /k2-team-project/assets/bouquet1_desk@2x-e1e15c00.jpg 1200w"
-          sizes="(min-width: 1280px) 600px, (min-width: 768px) 344px, 50vw"
-          src="/k2-team-project/assets/bouquet1_mob@1x-12b4e642.jpg"
-          alt="pinck flowers"
-          loading="lazy"
-        />
+        <picture>
+          <!-- Desktop screen -->
+          <source
+            media="(min-width: 1280px)"
+            srcset="/k2-team-project/assets/bouquet1_desk@1x-b046e670.jpg 1x, /k2-team-project/assets/bouquet1_desk@2x-e1e15c00.jpg 2x"
+            type="image/jpg"
+          />
+          <!-- Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="/k2-team-project/assets/bouquet1_tab@1x-50a0032b.jpg 1x, /k2-team-project/assets/bouquet1_tab@2x-928c460c.jpg 2x"
+            type="image/jpg"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="/k2-team-project/assets/bouquet1_mob@1x-12b4e642.jpg 1x, /k2-team-project/assets/bouquet1_mob@2x-3b153f44.jpg 2x"
+            type="image/jpg"
+          />
+          <img
+            class="store__image"
+            src="/k2-team-project/assets/bouquet1_mob@1x-12b4e642.jpg"
+            alt="pink flowers"
+            loading="lazy"
+          />
+        </picture>
+
         <h3 class="store__member">bouquets size S</h3>
         <p class="store__text">from $25</p>
       </li>
       <li class="store__item">
-        <img
-          srcset="/k2-team-project/assets/bouquet2_mob@1x-cb11ca1e.jpg 136w, /k2-team-project/assets/bouquet2_mob@2x-8ffc938b.jpg 272w, /k2-team-project/assets/bouquet2_tab@1x-1681859c.jpg 344w, /k2-team-project/assets/bouquet2_tab@2x-ec911754.jpg 688w, /k2-team-project/assets/bouquet2_desk@1x-9a53f77a.jpg 600w, /k2-team-project/assets/bouquet2_desk@2x-5849ceef.jpg 1200w"
-          sizes="(min-width: 1280px) 600px, (min-width: 768px) 344px, 50vw"
-          src="/k2-team-project/assets/bouquet2_mob@1x-cb11ca1e.jpg"
-          alt="violet flowers"
-          loading="lazy"
-        />
+        <picture>
+          <!-- Desktop screen -->
+          <source
+            media="(min-width: 1280px)"
+            srcset="/k2-team-project/assets/bouquet2_desk@1x-9a53f77a.jpg 1x, /k2-team-project/assets/bouquet2_desk@2x-5849ceef.jpg 2x"
+            type="image/jpg"
+          />
+          <!-- Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="/k2-team-project/assets/bouquet2_tab@1x-1681859c.jpg 1x, /k2-team-project/assets/bouquet2_tab@2x-ec911754.jpg 2x"
+            type="image/jpg"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="/k2-team-project/assets/bouquet2_mob@1x-cb11ca1e.jpg 1x, /k2-team-project/assets/bouquet2_mob@2x-8ffc938b.jpg 2x"
+            type="image/jpg"
+          />
+          <img
+            class="store__image"
+            src="/k2-team-project/assets/bouquet2_mob@1x-cb11ca1e.jpg"
+            alt="violet flowers"
+            loading="lazy"
+          />
+        </picture>
+
         <h3 class="store__member">bouquets size M</h3>
         <p class="store__text">from $45</p>
       </li>
       <li class="store__item">
-        <img
-          srcset="/k2-team-project/assets/bouquet4_mob@1x-a8622c1e.jpg 136w, /k2-team-project/assets/bouquet4_mob@2x-0838eb12.jpg 272w, /k2-team-project/assets/bouquet4_tab@1x-2c0ed860.jpg 344w, /k2-team-project/assets/bouquet4_tab@2x-93479d1e.jpg 688w, /k2-team-project/assets/bouquet4_desk@1x-dc755744.jpg 600w, /k2-team-project/assets/bouquet4_desk@2x-abcc2b08.jpg 1200w"
-          sizes="(min-width: 1280px) 600px, (min-width: 768px) 344px, 50vw"
-          src="/k2-team-project/assets/bouquet4_mob@1x-a8622c1e.jpg"
-          alt="large bouquets of flowers"
-          loading="lazy"
-        />
+        <picture>
+          <!-- Desktop screen -->
+          <source
+            media="(min-width: 1280px)"
+            srcset="/k2-team-project/assets/bouquet4_desk@1x-dc755744.jpg 1x, /k2-team-project/assets/bouquet4_desk@2x-abcc2b08.jpg 2x"
+            type="image/jpg"
+          />
+          <!-- Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="/k2-team-project/assets/bouquet4_tab@1x-2c0ed860.jpg 1x, /k2-team-project/assets/bouquet4_tab@2x-93479d1e.jpg 2x"
+            type="image/jpg"
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="/k2-team-project/assets/bouquet4_mob@1x-a8622c1e.jpg 1x, /k2-team-project/assets/bouquet4_mob@2x-0838eb12.jpg 2x"
+            type="image/jpg"
+          />
+          <img
+            class="store__image"
+            src="/k2-team-project/assets/bouquet4_mob@1x-a8622c1e.jpg"
+            alt="large bouquets of flowers"
+            loading="lazy"
+          />
+        </picture>
         <h3 class="store__member">bouquets size L</h3>
         <p class="store__text">from $60</p>
       </li>
@@ -226,7 +305,6 @@
     </button>
   </div>
 </section>
-<!-- <script src="./js/modal.js"></script> -->
 
       <!--  Delivery section  -->
 
@@ -309,12 +387,12 @@
         <!-- If we need navigation buttons -->
         <button class="swiper-button-prev" id="jsprev1" type="button">
           <svg class="slider_btn" width="41" height="27">
-            <use href="/k2-team-project/assets/sprite-4ddf5d33.svg#icon-slider-desktop-left"></use>
+            <use href="/k2-team-project/assets/sprite-c240c557.svg#icon-slider-desktop-left"></use>
           </svg>
         </button>
         <button class="swiper-button-next" id="jsnext1" type="button">
           <svg class="slider_btn" width="41" height="27">
-            <use href="/k2-team-project/assets/sprite-4ddf5d33.svg#icon-slider-desktop-right"></use>
+            <use href="/k2-team-project/assets/sprite-c240c557.svg#icon-slider-desktop-right"></use>
           </svg>
         </button>
       </div>
@@ -338,7 +416,7 @@
   aria-label="Back to top"
   title="Back to top"
   ><svg class="backttop">
-    <use class="backttop__svg" href="/k2-team-project/assets/sprite-4ddf5d33.svg#icon-rocket"></use>
+    <use class="backttop__svg" href="/k2-team-project/assets/sprite-c240c557.svg#icon-rocket"></use>
   </svg>
 </a>
 
@@ -347,7 +425,7 @@
 <div class="menu-container js-menu-container" id="mobile-menu">
   <button class="menu-toggle js-close-menu" type="button">
     <svg width="24" height="24">
-      <use class="icon-cross" href="/k2-team-project/assets/sprite-4ddf5d33.svg#icon-close-menu"></use>
+      <use class="icon-cross" href="/k2-team-project/assets/sprite-c240c557.svg#icon-close-menu"></use>
     </svg>
   </button>
   <div class="mob-menu-wrapper">
@@ -375,7 +453,7 @@
     <footer class="footer">
   <div class="footer-container">
     <svg class="logo__footer" width="74" height="58">
-      <use href="/k2-team-project/assets/sprite-4ddf5d33.svg#icon-logodesktop"></use>
+      <use href="/k2-team-project/assets/sprite-c240c557.svg#icon-logodesktop"></use>
     </svg>
     <div class="top-container">
       <div class="nav-footer">
@@ -438,20 +516,26 @@
       <div class="socials">
         <ul class="socials__list">
           <li class="socials__item">
-            <a href="http://fb.com" target="_blank" rel="noopener noreferrer">
-              <svg class="social__item" width="28" height="28">
-                <use href="/k2-team-project/assets/sprite-4ddf5d33.svg#facebook"></use>
+            <a
+              class="socials__link"
+              href="http://fb.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="socials__icon" width="28" height="28">
+                <use href="/k2-team-project/assets/sprite-c240c557.svg#facebook"></use>
               </svg>
             </a>
           </li>
           <li class="socials__item">
             <a
+              class="socials__link"
               href="http://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg class="socials__item" width="28" height="28">
-                <use href="/k2-team-project/assets/sprite-4ddf5d33.svg#instagram"></use>
+              <svg class="socials__icon" width="28" height="28">
+                <use href="/k2-team-project/assets/sprite-c240c557.svg#instagram"></use>
               </svg>
             </a>
           </li>
@@ -467,7 +551,7 @@
   <div class="modal-contact-us">
     <button class="modal-btn-close" type="button" data-modal-close>
       <svg class="modal__icon-close" width="18" height="18">
-        <use href="/k2-team-project/assets/sprite-4ddf5d33.svg#close"></use>
+        <use href="/k2-team-project/assets/sprite-c240c557.svg#close"></use>
       </svg>
     </button>
     <strong class="modal-contact-us__title">Contact us</strong>
@@ -526,7 +610,7 @@
       data-modal-close-Ty
     >
       <svg class="modal__icon-close" width="18" height="18">
-        <use href="/k2-team-project/assets/sprite-4ddf5d33.svg#close"></use>
+        <use href="/k2-team-project/assets/sprite-c240c557.svg#close"></use>
       </svg>
     </button>
     <picture>
@@ -574,7 +658,7 @@
       data-modal-close-Subscribe
     >
       <svg class="modal__icon-close" width="18" height="18">
-        <use href="/k2-team-project/assets/sprite-4ddf5d33.svg#close"></use>
+        <use href="/k2-team-project/assets/sprite-c240c557.svg#close"></use>
       </svg>
     </button>
     <picture>
