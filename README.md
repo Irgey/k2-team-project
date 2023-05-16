@@ -4,4 +4,6 @@ Flower company website with responsive layout, burger menu, modal window and att
 
 Used technologies: Parcel, SCSS, HTML
 
+irgey.github.io/k2-team-project/
+
 
